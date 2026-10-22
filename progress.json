@@ -6,11 +6,11 @@
     "problems": 200,
     "solutions": 400,
     "qa": 402,
-    "tested_solution_records": 380
+    "tested_solution_records": 400
   },
   "skipped": 16,
-  "notes": "Batch 0012 adds problems 207, 208, 209, 211, 213, 217, 219, 226, 228, and 231. Runtime execution is pending for this batch; its solution records are explicitly marked self_check.ran=false. SQL/shell-only problems 192-197 remain skipped. User waived separate held-out problem list.",
-  "local_test_cases_passed": 1193,
+  "notes": "Batch 0012 problems 207, 208, 209, 211, 213, 217, 219, 226, 228, and 231 were tested locally. Python 3: 35/35 assertions passed; Java 21: 41/41 passed. Batch 0012 solution records have self_check.ran=true and local case counts. All solution statuses remain pending official/platform evaluation; local checks are not official judge results. Shell/SQL-only problems 192-197 remain skipped. User waived separate held-out problem list.",
+  "local_test_cases_passed": 1269,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
