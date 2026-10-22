@@ -91,3 +91,28 @@ The Java 4Sum assertion initially failed because the test harness compared valid
 - Local test cases/assertions failed in final runs: 0
 - Every solution record has `self_check.ran=true` and records the published statement examples as passed.
 - Every solution record still has `status=pending`; local tests are not official LeetCode acceptance results.
+
+
+# Batch 0002 local tests — problems 21-40
+
+Environment: CPython 3.13.5 and Java 21.0.12. Tests used judge-compatible linked-list node classes where needed. These are local harness results, not official online-judge submissions.
+
+| Range | Language | Cases/assertions passed | Result |
+|---|---|---:|---|
+| 21-30 | Python 3 | 34/34 | PASS |
+| 21-30 | Java 21 | 34/34 | PASS |
+| 31-40 | Python 3 | 35/35 plus Sudoku board solve check | PASS |
+| 31-40 | Java 21 | 116/116 assertions, including Sudoku cell checks | PASS |
+| **Batch 0002 total** | **Both languages** | **219 passing checks** | **PASS** |
+
+Coverage includes linked-list merging and rewiring, parenthesis generation, heap merging, in-place array updates, substring search, bit-shift division including signed overflow, fixed-width sliding windows with repeated words, next permutation, binary search variants, Sudoku validation and solving, run-length encoding, and combination backtracking.
+
+The Java Sudoku assertion count includes per-cell checks that the solved board has no blanks; the final board was also checked against the Sudoku validity rules. A Java substring-concatenation test initially returned valid indices in a different order than the test expected. Since output order is unrestricted, the harness was changed to compare sorted indices; the implementation passed all cases afterward.
+
+## Cumulative totals through problem 40
+- Problem records: 40
+- Solution records: 80 (Python 3 and Java 21 for each problem)
+- Concept Q&A records: 82
+- Local tests/assertions passed: 401
+- Final-run failures: 0
+- All solution records remain `pending` for official/independent evaluation; their local self-checks are marked as run.
