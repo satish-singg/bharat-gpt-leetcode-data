@@ -22,8 +22,11 @@ def latex_plain(s):
                  (r"\\lceil", "ceil("), (r"\\rceil", ")"), (r"\\text\{([^}]*)\}", r"\1"), (r"\\textit\{([^}]*)\}", r"\1"), (r"\\mathrm\{([^}]*)\}", r"\1"),
                  (r"\\operatorname\{([^}]*)\}", r"\1"), (r"\\frac\{([^}]*)\}\{([^}]*)\}", r"(\1)/(\2)"), (r"\\&", "&"), (r"\\\\", " "), (r"\\,|\;|\\!|\\ ", " "),
                  (r"\^\{([^}]*)\}", r"^\1"), (r"_\{([^}]*)\}", r"_\1"), (r"\\left|\\right", ""), (r"\\in\b", "in"), (r"\\lt\b", "<"), (r"\\gt\b", ">"), (r"\\to\b", "->"),
-                 (r"\\oplus", "XOR"), (r"\\&|\\%", "%")):
+                 (r"\\oplus", "XOR"), (r"\\&|\\%", "%"), (r"\\begin\{cases\}|\\end\{cases\}|\\begin\{aligned\}|\\end\{aligned\}", ""),
+                 (r"\\(?:mod|bmod|pmod)\b", "mod"), (r"\\infty", "infinity"), (r"\\(?:lor)\b", "or"), (r"\\(?:land|wedge)\b", "and"), (r"\\(?:ne|neq)\b", "!="),
+                 (r"\\(?:texttt|underline|mathbf|mathcal|boldsymbol|overline)\{([^}]*)\}", r"\1"), (r"\\mid\b", "|"), (r"\\q?quad\b", " ")):
         s = re.sub(a, b, s)
+    s = re.sub(r"\\([a-zA-Z]+)", r"\1", s)
     return re.sub(r"\n{3,}", "\n\n", s).strip()
 
 def balanced_O(s, start):
@@ -93,7 +96,7 @@ def hjmao_java(root, slug2num, excl):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--doocs", required=True); ap.add_argument("--hjmao"); ap.add_argument("--out", required=True)
-    ap.add_argument("--exclude-numbers-file"); ap.add_argument("--workers", type=int, default=6); ap.add_argument("--no-run", action="store_true"); a = ap.parse_args()
+    ap.add_argument("--exclude-numbers-file"); ap.add_argument("--workers", type=int, default=6); ap.add_argument("--no-run", action="store_true"); ap.add_argument("--no-java", action="store_true"); a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     excl = {int(x) for x in open(a.exclude_numbers_file).read().split() if x.strip().isdigit()} if a.exclude_numbers_file else set()
     problems, sols = {}, []
@@ -118,6 +121,15 @@ def main():
                 ex = B.parse_examples(problems[s["number"]]["statement"])
                 if ex: jobs.append({"id": i, "code": s["code"], "method": s["method"], "examples": ex})
     got = {} if a.no_run else B.run_examples(jobs, a.workers)
+    if not a.no_run and not a.no_java:
+        import java_examples as JX
+        jj = []
+        for s in sols:
+            if s["language"] == "java":
+                ex = B.parse_examples(problems[s["number"]]["statement"])
+                if ex: jj.append({"id": s["id"], "code": s["code"], "examples": ex, "hint": None})
+        jr = JX.run(jj); rep["java_with_examples"] = len(jj); rep["java_skipped"] = sum(1 for v in jr.values() if "skip" in v)
+        got.update({k: v for k, v in jr.items() if "skip" not in v})
     for s in sols:
         r = got.get(s["id"]); s["examples"] = ({k: r.get(k) for k in ("total", "passed", "unordered", "error", "firsterr")} if r else None)
         full = bool(r and r["total"] > 0 and r["passed"] + r["unordered"] == r["total"] and not r.get("error"))

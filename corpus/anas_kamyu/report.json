@@ -7,19 +7,21 @@
  "excluded_locked": 0,
  "duplicates_removed": 8,
  "python_with_examples": 3460,
+ "java_with_examples": 1475,
+ "java_skipped": 203,
  "problems": 1809,
  "solutions": 7795,
- "sft": 7539,
+ "sft": 7516,
  "by_language": {
   "python3": 3893,
   "cpp": 2202,
   "java": 1700
  },
  "by_tier": {
-  "B": 1977,
+  "B": 3220,
   "A": 1018,
-  "C": 4544,
-  "D": 256
+  "C": 3278,
+  "D": 279
  },
  "by_tier_python": {
   "B": 1977,

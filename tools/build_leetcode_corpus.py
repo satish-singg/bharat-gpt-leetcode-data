@@ -246,7 +246,7 @@ def run_examples(jobs, workers=6, chunk=40):
 # ---------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--anas", required=True); ap.add_argument("--kamyu", required=True); ap.add_argument("--out", required=True)
-    ap.add_argument("--exclude-numbers-file"); ap.add_argument("--workers", type=int, default=6); ap.add_argument("--no-run", action="store_true"); ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--exclude-numbers-file"); ap.add_argument("--workers", type=int, default=6); ap.add_argument("--no-run", action="store_true"); ap.add_argument("--no-java", action="store_true"); ap.add_argument("--limit", type=int, default=0)
     a = ap.parse_args(); os.makedirs(a.out, exist_ok=True)
     excl = {int(x) for x in open(a.exclude_numbers_file).read().split() if x.strip().isdigit()} if a.exclude_numbers_file else set()
     topics = topics_by_number(a.kamyu); rep = {"dropped_py2": {}, "excluded_locked": 0}
@@ -304,6 +304,15 @@ def main():
                 if ex: jobs.append({"id": i, "code": s["code"], "method": s["method"], "examples": ex})
     got = {} if a.no_run else run_examples(jobs, a.workers)
     rep["python_with_examples"] = len(jobs)
+    if not a.no_run and not a.no_java:
+        import java_examples as JX
+        jj = []
+        for s in sols:
+            if s["language"] == "java":
+                pr = problems[s["number"]]; ex = parse_examples(pr["statement"]); mm = re.search(r"def (\w+)\(", pr["python_signature"] or "")
+                if ex and not re.search(r"ListNode|TreeNode|Node\b", (pr["java_signature"] or "") + (pr["python_signature"] or "")): jj.append({"id": s["id"], "code": s["code"], "examples": ex, "hint": mm.group(1) if mm else None})
+        jr = JX.run(jj); rep["java_with_examples"] = len(jj); rep["java_skipped"] = sum(1 for v in jr.values() if "skip" in v)
+        got.update({k: v for k, v in jr.items() if "skip" not in v})
     for s in sols:
         r = got.get(s["id"]); s["examples"] = {"total": r["total"], "passed": r["passed"], "unordered": r["unordered"], "error": r.get("error"), "firsterr": r.get("firsterr")} if r else None
         if r and r["total"] > 0:

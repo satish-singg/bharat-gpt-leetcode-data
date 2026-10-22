@@ -1,0 +1,53 @@
+{
+ "problems": 5822,
+ "solutions": 26416,
+ "sft_plain": 25963,
+ "sft_think": 18176,
+ "qa": 282,
+ "by_source": {
+  "chatgpt": 298,
+  "kamyu104": 4303,
+  "anas": 3492,
+  "doocs": 18050,
+  "huajianmao": 273
+ },
+ "by_language": {
+  "python3": 7254,
+  "java": 5295,
+  "cpp": 5375,
+  "go": 3147,
+  "typescript": 2834,
+  "rust": 1213,
+  "javascript": 553,
+  "csharp": 404,
+  "php": 128,
+  "scala": 4,
+  "swift": 16,
+  "ruby": 11,
+  "kotlin": 16,
+  "c": 166
+ },
+ "by_tier": {
+  "T": 280,
+  "U": 18,
+  "B": 3529,
+  "A": 5656,
+  "C": 16480,
+  "D": 453
+ },
+ "approach_id": {
+  "other_unclassified": 9786,
+  "dp_bottom_up": 1933,
+  "hash_map": 1460,
+  "simulation": 1451,
+  "brute_force": 1082,
+  "graph_dfs": 1022,
+  "binary_search": 1015,
+  "sorting": 980,
+  "greedy": 821,
+  "two_pointers": 814,
+  "dp_top_down": 641,
+  "heap": 545
+ },
+ "locked_removed_from_input": 228
+}
