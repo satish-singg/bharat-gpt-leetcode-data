@@ -86,7 +86,7 @@ The Java 4Sum assertion initially failed because the test harness compared valid
 ## Batch 0001 cumulative totals (problems 1-20)
 - Problem records: 20
 - Solution records: 40 (Python 3 and Java 21 for each problem)
-- Concept Q&A records: 54 (2–4 per problem; this batch currently has 2–3 each)
+- Concept Q&A records: 42 (2–3 per problem)
 - Local test cases/assertions passed: 182 (91 Python and 91 Java)
 - Local test cases/assertions failed in final runs: 0
 - Every solution record has `self_check.ran=true` and records the published statement examples as passed.
