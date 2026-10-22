@@ -1,0 +1,12 @@
+{
+  "last_batch": 1,
+  "last_problem_number": 3,
+  "problems_done": 3,
+  "records": {
+    "problems": 3,
+    "solutions": 6,
+    "qa": 6
+  },
+  "skipped": 0,
+  "notes": "Initial seed; continue in ascending problem-number order. User waived the separate held-out problem list."
+}
