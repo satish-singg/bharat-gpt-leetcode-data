@@ -238,3 +238,9 @@ The read4 checks use a simulated reader implementing the judge-provided `read4` 
 | Python 3 | 27/27 | PASS |
 | Java 21 | 25/25 | PASS |
 | **Batch 0008 total** | **52/52** | **PASS** |
+
+## Batch 0009 — problems 161–170
+
+- Added 10 problem records, 20 Python 3 / Java 21 solution records, and 20 concept/pitfall Q&A records.
+- JSONL structure and record counts validated: 10 problem records, 20 solution records, and 20 Q&A records; every line parsed as JSON.
+- **Execution status:** the batch's solution snippets have not yet been run in local language harnesses. Their `self_check.ran` flags are therefore false, and records remain `pending`. No claim of official LeetCode acceptance is made.
