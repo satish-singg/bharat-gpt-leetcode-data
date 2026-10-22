@@ -1,16 +1,16 @@
 {
   "last_batch": 1,
-  "last_problem_number": 3,
-  "problems_done": 3,
+  "last_problem_number": 20,
+  "problems_done": 20,
   "records": {
-    "problems": 3,
-    "solutions": 6,
-    "qa": 6,
-    "tested_solution_records": 6
+    "problems": 20,
+    "solutions": 40,
+    "qa": 42,
+    "tested_solution_records": 40
   },
   "skipped": 0,
-  "notes": "Initial seed; continue in ascending problem-number order. User waived the separate held-out problem list.",
-  "local_test_cases_passed": 28,
+  "notes": "Batch 0001 covers problems 1-20. All 40 Python/Java solution records were exercised in local harnesses; 182 assertions/cases passed. Records remain pending until independent evaluation. The user waived the separate held-out problem list.",
+  "local_test_cases_passed": 182,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
