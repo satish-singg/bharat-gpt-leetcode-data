@@ -2,7 +2,7 @@
 
 - Runtime: CPython 3.13.5
 - Runtime/compiler: OpenJDK / javac 21.0.12.1
-- Python harness: 33 assertions passed, 0 failed
+- Python harness: 35 assertions passed, 0 failed
 - Java 21 compiled harness: 21 assertions passed, 0 failed
 - Scope: Problems 191, 198–206; 10 problems, 20 solution records, 20 concept/pitfall Q&A records.
 - SQL/shell-only problems 192–197 were skipped to keep this corpus focused on Python 3 and Java 21 algorithm solutions.
