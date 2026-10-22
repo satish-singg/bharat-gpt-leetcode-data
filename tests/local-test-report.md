@@ -116,3 +116,26 @@ The Java Sudoku assertion count includes per-cell checks that the solved board h
 - Local tests/assertions passed: 401
 - Final-run failures: 0
 - All solution records remain `pending` for official/independent evaluation; their local self-checks are marked as run.
+
+
+# Batch 0003 local tests — problems 41-60
+
+Environment: CPython 3.13.5 and Java 21.0.12. Linked-list harnesses were not needed in this batch. The N-Queens solver outputs were checked for expected solution counts, and the Sudoku/board-oriented cases in prior batches were validated separately.
+
+| Range | Language | Cases/assertions passed | Result |
+|---|---|---:|---|
+| 41-50 | Python 3 | 35/35 | PASS |
+| 41-50 | Java 21 | 34/34 | PASS |
+| 51-60 | Python 3 | 33/33 | PASS |
+| 51-60 | Java 21 | 33/33 | PASS |
+| **Batch 0003 total** | **Both languages** | **135 passing checks** | **PASS** |
+
+Coverage includes in-place index placement, two-pointer water trapping, string multiplication, wildcard DP, greedy jumps, permutation generation with and without duplicates, matrix rotation, anagram grouping, exponentiation by squaring, N-Queens search/counting, Kadane's algorithm, spiral traversals, interval merging/insertion, and factorial-number-system permutation selection.
+
+## Cumulative totals through problem 60
+- Problem records: 60
+- Solution records: 120 (Python 3 and Java 21 for each problem)
+- Concept Q&A records: 122
+- Local tests/assertions passed: 536
+- Final-run failures: 0
+- All solution records remain `pending` for independent/official evaluation; local self-checks are marked as run. Problem 51's statement now includes examples so its self-check fields match the statement.
