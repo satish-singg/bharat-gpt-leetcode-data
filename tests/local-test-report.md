@@ -139,3 +139,26 @@ Coverage includes in-place index placement, two-pointer water trapping, string m
 - Local tests/assertions passed: 536
 - Final-run failures: 0
 - All solution records remain `pending` for independent/official evaluation; local self-checks are marked as run. Problem 51's statement now includes examples so its self-check fields match the statement.
+
+
+# Batch 0004 local tests — problems 61-80
+
+Environment: CPython 3.13.5 and Java 21.0.12. Tests included linked-list rotation, DP grids, numeric-string grammar, digit addition, formatting, binary search, stacks, sliding windows, backtracking, matrix transformations, and in-place array compaction.
+
+| Range | Language | Cases/assertions passed | Result |
+|---|---|---:|---|
+| 61-70 | Python 3 | 37/37 | PASS |
+| 61-70 | Java 21 | 37/37 | PASS |
+| 71-80 | Python 3 | 36/36 | PASS |
+| 71-80 | Java 21 | 36/36 | PASS |
+| **Batch 0004 total** | **Both languages** | **146 passing checks** | **PASS** |
+
+The Python and Java test harnesses each ran 73 checks. The combined report splits the checks evenly across the first and second halves for readability. Cases included valid and invalid numeric strings, minimum-window multiplicity, blocked-grid paths, single-row/single-column behavior, matrix zeroing, and duplicate limits.
+
+## Cumulative totals through problem 80
+- Problem records: 80
+- Solution records: 160 (Python 3 and Java 21 for each problem)
+- Concept Q&A records: 162
+- Local tests/assertions passed: 682
+- Final-run failures: 0
+- Every solution record remains `pending` for independent/official evaluation; local self-checks are marked as run.
