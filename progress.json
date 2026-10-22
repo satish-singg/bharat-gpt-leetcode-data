@@ -2,15 +2,10 @@
   "last_batch": 9,
   "last_problem_number": 170,
   "problems_done": 170,
-  "records": {
-    "problems": 170,
-    "solutions": 340,
-    "qa": 342,
-    "tested_solution_records": 320
-  },
+  "records": {"problems": 170, "solutions": 340, "qa": 342, "tested_solution_records": 340},
   "skipped": 0,
-  "notes": "Batch 0001 covers problems 1-20; batch 0002 covers 21-40; batch 0003 covers 41-60; batch 0004 covers 61-80; batch 0005 covers 81-100; batch 0006 covers 101-120; batch 0007 covers 121-140; batch 0008 covers 141-160; batch 0009 covers 161-170. Batch 0009 JSONL structure validated (10 problems, 20 solutions, 20 Q&A records), but its solution snippets have not yet been executed; self_check.ran is false and they remain pending. User waived the separate held-out problem list.",
-  "local_test_cases_passed": 1003,
+  "notes": "Batch 0009 solutions locally tested: 42 Python assertions and 42 Java assertions passed. Records remain pending for broader/official evaluation.",
+  "local_test_cases_passed": 1087,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
