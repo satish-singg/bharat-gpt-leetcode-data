@@ -162,3 +162,24 @@ The Python and Java test harnesses each ran 73 checks. The combined report split
 - Local tests/assertions passed: 682
 - Final-run failures: 0
 - Every solution record remains `pending` for independent/official evaluation; local self-checks are marked as run.
+
+
+# Batch 0005 local tests — problems 81-100
+
+Environment: CPython 3.13.5 and Java 21.0.12. Tests included duplicate-aware rotated search, linked-list duplicate removal and partitioning, monotonic-stack histogram/rectangle algorithms, scramble-string memoization, array merging, Gray code, subset generation, decoding DP, linked-list segment reversal, IP-address backtracking, tree traversals/generation/validation/recovery, and interleaving DP.
+
+| Language | Cases/assertions passed | Result |
+|---|---:|---|
+| Python 3 | 63/63 | PASS |
+| Java 21 | 63/63 | PASS |
+| **Batch 0005 total** | **126 passing checks** | **PASS** |
+
+Tree tests include inorder traversal, unique-BST counts, strict BST-bound validation (including duplicate values), recovering two swapped values, and structural tree equality. Scramble String was tested on positive and negative examples; histogram and maximal-rectangle cases included empty-height and single-cell boundaries.
+
+## Cumulative totals through problem 100
+- Problem records: 100
+- Solution records: 200 (Python 3 and Java 21 for each problem)
+- Concept Q&A records: 202
+- Local tests/assertions passed: 808
+- Final-run failures: 0
+- Every solution record remains `pending` for independent/official evaluation; local self-checks are marked as run.
