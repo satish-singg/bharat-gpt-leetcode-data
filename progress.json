@@ -5,8 +5,12 @@
   "records": {
     "problems": 3,
     "solutions": 6,
-    "qa": 6
+    "qa": 6,
+    "tested_solution_records": 6
   },
   "skipped": 0,
-  "notes": "Initial seed; continue in ascending problem-number order. User waived the separate held-out problem list."
+  "notes": "Initial seed; continue in ascending problem-number order. User waived the separate held-out problem list.",
+  "local_test_cases_passed": 28,
+  "local_test_cases_failed": 0,
+  "test_report": "tests/local-test-report.md"
 }
