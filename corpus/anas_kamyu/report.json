@@ -1,0 +1,32 @@
+{
+ "dropped_py2": {
+  "py2_division": 128,
+  "py2_only_builtin": 10,
+  "py2_list_view_indexing": 1
+ },
+ "excluded_locked": 0,
+ "duplicates_removed": 8,
+ "python_with_examples": 3460,
+ "problems": 1809,
+ "solutions": 7795,
+ "sft": 7539,
+ "by_language": {
+  "python3": 3893,
+  "cpp": 2202,
+  "java": 1700
+ },
+ "by_tier": {
+  "B": 1977,
+  "A": 1018,
+  "C": 4544,
+  "D": 256
+ },
+ "by_tier_python": {
+  "B": 1977,
+  "A": 1018,
+  "D": 256,
+  "C": 642
+ },
+ "labelled": 2855,
+ "tle_variants": 23
+}

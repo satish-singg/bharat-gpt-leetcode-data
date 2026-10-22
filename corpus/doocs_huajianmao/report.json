@@ -1,0 +1,38 @@
+{
+ "doocs_problems": 3859,
+ "doocs_solutions": 18050,
+ "hjmao_java": 273,
+ "sft": 18168,
+ "by_language": {
+  "python3": 3212,
+  "java": 3446,
+  "cpp": 3173,
+  "go": 3147,
+  "typescript": 2834,
+  "rust": 1213,
+  "javascript": 553,
+  "csharp": 404,
+  "php": 128,
+  "scala": 4,
+  "swift": 16,
+  "ruby": 11,
+  "kotlin": 16,
+  "c": 166
+ },
+ "by_tier": {
+  "A": 2342,
+  "C": 15756,
+  "D": 155,
+  "B": 70
+ },
+ "by_tier_python": {
+  "A": 2342,
+  "C": 645,
+  "D": 155,
+  "B": 70
+ },
+ "with_explanation": 17885,
+ "labelled": 17542,
+ "with_thinking": 18050,
+ "excluded_locked": 228
+}
