@@ -282,3 +282,10 @@ A first Python test expectation was corrected: target 4 with [1,1,1,1] has a val
 - Local test assertions passed: 1269
 - Local test assertions failed in final runs: 0
 - Solution statuses remain pending official/platform evaluation.
+
+## Batch 0013 — 2026-10-22
+- Python 3: 41 assertions passed, 0 failed.
+- Java 21: 41 assertions passed, 0 failed (compiled with javac 21.0.12.1).
+- Batch total: 82 passed, 0 failed.
+- Cumulative recorded checks: 1,351 passed, 0 failed.
+- Local harness checks only; not official LeetCode judge submissions.
