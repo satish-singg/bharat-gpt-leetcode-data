@@ -204,3 +204,24 @@ Tree checks verify reconstructed preorder/inorder results, BST ordering and bala
 - Local tests/assertions passed: 877
 - Final-run failures: 0
 - Every solution record remains `pending` for independent/official evaluation; local self-checks are marked as run.
+
+
+# Batch 0007 local tests — problems 121-140
+
+Environment: CPython 3.13.5 and Java 21.0.12. Tests cover one- and two-transaction stock profit, tree path sums, filtered palindromes, shortest word ladders (including all shortest paths), integer-limit consecutive sequences, flood fill, palindrome partitioning, graph cloning, greedy station/candy allocation, bitwise uniqueness, random-pointer list copying, and word-break DP/backtracking.
+
+| Language | Cases/assertions passed | Result |
+|---|---:|---|
+| Python 3 | 53/53 | PASS |
+| Java 21 | 21/21 combined assertions | PASS |
+| **Batch 0007 total** | **74 passing checks** | **PASS** |
+
+The Java checks group several examples into combined assertions. The Longest Consecutive Sequence tests include both integer extremes to verify that predecessor/successor arithmetic does not overflow. Graph-copy tests verify that clones are distinct objects and that cyclic neighbor/random-pointer relationships point to cloned nodes.
+
+## Cumulative totals through problem 140
+- Problem records: 140
+- Solution records: 280 (Python 3 and Java 21 for each problem)
+- Concept Q&A records: 282
+- Local tests/assertions passed: 951
+- Final-run failures: 0
+- Every solution record remains `pending` for independent/official evaluation; local self-checks are marked as run.
