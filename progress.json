@@ -1,16 +1,10 @@
 {
-  "last_batch": 10,
-  "last_problem_number": 190,
-  "problems_done": 180,
-  "records": {
-    "problems": 180,
-    "solutions": 360,
-    "qa": 362,
-    "tested_solution_records": 360
-  },
-  "skipped": 10,
-  "notes": "Batch 0010 contains problems 171-174, 179, and 186-190. SQL-only problems 175-178 and 180-185 were skipped to keep the dataset focused on Python 3 and Java 21 algorithm solutions. Batch 0010 local tests passed: 25 Python assertions and 25 Java 21 assertions. Tests are local harnesses, not official LeetCode judge results. User waived separate held-out problem list.",
-  "local_test_cases_passed": 1137,
+  "last_batch": 11,
+  "last_problem_number": 206,
+  "problems_done": 190,
+  "records": {"problems": 190, "solutions": 380, "qa": 362, "tested_solution_records": 380},
+  "skipped": 16,
+  "local_test_cases_passed": 1191,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
