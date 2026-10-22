@@ -253,3 +253,32 @@ The read4 checks use a simulated reader implementing the judge-provided `read4` 
 - Cumulative total recorded in `progress.json`: 1,193 passed, 0 failed.
 - SQL/shell-only problems 192–197 were skipped. These checks are not official LeetCode judge results.
 
+
+
+# Batch 0012 local tests — problems 207, 208, 209, 211, 213, 217, 219, 226, 228, 231
+
+Environment: CPython 3.13.5 and OpenJDK/javac 21.0.12.
+
+| Problem | Python checks | Java 21 checks | Result |
+|---|---:|---:|---|
+| 207 Course Schedule | 4/4 | 4/4 | PASS |
+| 208 Implement Trie | 2/2 | 4/4 | PASS |
+| 209 Minimum Size Subarray Sum | 4/4 | 5/5 | PASS |
+| 211 WordDictionary | 2/2 | 5/5 | PASS |
+| 213 House Robber II | 4/4 | 4/4 | PASS |
+| 217 Contains Duplicate | 3/3 | 3/3 | PASS |
+| 219 Contains Duplicate II | 4/4 | 4/4 | PASS |
+| 226 Invert Binary Tree | 3/3 | 3/3 | PASS |
+| 228 Summary Ranges | 4/4 | 4/4 | PASS |
+| 231 Power of Two | 5/5 | 5/5 | PASS |
+| **Batch 0012 total** | **35/35** | **41/41** | **PASS** |
+
+A first Python test expectation was corrected: target 4 with [1,1,1,1] has a valid length-4 window. Final results: 35 Python assertions passed, 0 failed; 41 Java 21 assertions passed, 0 failed. These are local harness results, not official LeetCode judge results.
+
+## Updated cumulative totals through batch 0012
+- Problem records: 200
+- Solution records: 400 (Python 3 and Java 21 for each problem)
+- Concept/pitfall Q&A records: 402
+- Local test assertions passed: 1269
+- Local test assertions failed in final runs: 0
+- Solution statuses remain pending official/platform evaluation.
