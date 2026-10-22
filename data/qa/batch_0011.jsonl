@@ -1,0 +1,20 @@
+{"number":191,"kind":"concept","question":"Why mask n with 0xFFFFFFFF in Python?","answer":"Python integers are arbitrary precision, while this problem defines a 32-bit unsigned value; the mask keeps the low 32 bits.","status":"pending"}
+{"number":191,"kind":"pitfall","question":"Can Integer.bitCount be used in Java?","answer":"Yes. Integer.bitCount returns the number of one-bits in the 32-bit int representation.","status":"pending"}
+{"number":198,"kind":"concept","question":"What do the two rolling DP values mean?","answer":"They store the best amount through the previous house and the best amount two houses back.","status":"pending"}
+{"number":198,"kind":"pitfall","question":"Why can an empty list return zero?","answer":"No house must be robbed, so the optimal sum for an empty input is zero.","status":"pending"}
+{"number":199,"kind":"concept","question":"Why use level-order traversal?","answer":"Breadth-first traversal groups nodes by depth, making it easy to record the last node at each level.","status":"pending"}
+{"number":199,"kind":"pitfall","question":"Why not always record the right child?","answer":"The rightmost visible node may be a left child when no node exists to its right at that depth.","status":"pending"}
+{"number":200,"kind":"concept","question":"Why mark a land cell before pushing it?","answer":"It prevents the same cell from being pushed repeatedly by neighboring cells.","status":"pending"}
+{"number":200,"kind":"pitfall","question":"Which directions connect islands?","answer":"Only the four orthogonal neighbors connect; diagonal contact does not merge islands.","status":"pending"}
+{"number":201,"kind":"concept","question":"Why shift both bounds until equal?","answer":"Only the shared leading bits survive the AND across every number in the interval.","status":"pending"}
+{"number":201,"kind":"pitfall","question":"What if left equals right?","answer":"No shifts are needed, and the AND result is that number itself.","status":"pending"}
+{"number":202,"kind":"concept","question":"How does Floyd cycle detection solve Happy Number?","answer":"Slow and fast pointers follow the digit-square transform at different speeds; reaching 1 succeeds and meeting elsewhere reveals a cycle.","status":"pending"}
+{"number":202,"kind":"pitfall","question":"Why not store every seen number?","answer":"A set works, but Floyd's algorithm detects cycles with constant extra space.","status":"pending"}
+{"number":203,"kind":"concept","question":"Why use a dummy node?","answer":"It provides a predecessor before the head, so leading matching nodes are removed by the same loop.","status":"pending"}
+{"number":203,"kind":"pitfall","question":"When should the pointer advance?","answer":"Advance only when the next node is retained; after removal, inspect the new next node immediately.","status":"pending"}
+{"number":204,"kind":"concept","question":"Why start marking multiples at p squared?","answer":"Any smaller multiple of p has a smaller factor and was already marked.","status":"pending"}
+{"number":204,"kind":"pitfall","question":"Does the function count n itself?","answer":"No. The required range is from 0 through n-1, so the sieve array has length n.","status":"pending"}
+{"number":205,"kind":"concept","question":"Why must mapping be one-to-one in both directions?","answer":"Two source characters cannot map to the same target, and one source character cannot map to different targets.","status":"pending"}
+{"number":205,"kind":"pitfall","question":"Why compare lengths first?","answer":"A character-by-character bijection is impossible when the strings have different lengths.","status":"pending"}
+{"number":206,"kind":"concept","question":"Why save current.next before reversing the link?","answer":"After assigning current.next to the previous node, the original successor would otherwise be lost.","status":"pending"}
+{"number":206,"kind":"pitfall","question":"What is the new head after reversal?","answer":"When traversal finishes, previous points to the original tail, now the reversed list's head.","status":"pending"}
