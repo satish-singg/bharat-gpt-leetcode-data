@@ -225,3 +225,16 @@ The Java checks group several examples into combined assertions. The Longest Con
 - Local tests/assertions passed: 951
 - Final-run failures: 0
 - Every solution record remains `pending` for independent/official evaluation; local self-checks are marked as run.
+
+
+# Batch 0008 local tests — problems 141-160
+
+The batch's Python algorithm harness ran under CPython 3.13.5: **27/27 assertions passed**. The Java 21 algorithm harness compiled with OpenJDK 21.0.12.1 and passed **25/25 assertions**. The checks covered linked-list cycle detection and entry, list reordering and sorting, tree traversals/upside-down rewiring, LRU/Min Stack behavior, line-slope normalization including vertical lines and duplicate points, RPN negative division, word reversal/whitespace, max-product arrays, rotated-array minima with duplicates, read4 single and repeated reads, sliding-window strings, and shared-node intersection.
+
+The read4 checks use a simulated reader implementing the judge-provided `read4` contract. These are local smoke tests, not official LeetCode judge results. All 40 solution records are marked locally exercised, while their evaluation status remains `pending` pending broader randomized/official validation.
+
+| Language | Checks passed | Result |
+|---|---:|---|
+| Python 3 | 27/27 | PASS |
+| Java 21 | 25/25 | PASS |
+| **Batch 0008 total** | **52/52** | **PASS** |
