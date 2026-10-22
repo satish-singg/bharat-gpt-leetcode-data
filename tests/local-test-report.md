@@ -244,3 +244,12 @@ The read4 checks use a simulated reader implementing the judge-provided `read4` 
 - Added 10 problem records, 20 Python 3 / Java 21 solution records, and 20 concept/pitfall Q&A records.
 - JSONL structure and record counts validated: 10 problem records, 20 solution records, and 20 Q&A records; every line parsed as JSON.
 - **Execution status:** the batch's solution snippets have not yet been run in local language harnesses. Their `self_check.ran` flags are therefore false, and records remain `pending`. No claim of official LeetCode acceptance is made.
+
+## Batch 0011 — problems 191, 198–206
+
+- Python 3 local harness: 35 assertions passed, 0 failed.
+- Java 21 compiled local harness: 21 assertions passed, 0 failed.
+- Total added local checks: 56.
+- Cumulative total recorded in `progress.json`: 1,193 passed, 0 failed.
+- SQL/shell-only problems 192–197 were skipped. These checks are not official LeetCode judge results.
+
