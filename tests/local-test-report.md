@@ -54,3 +54,40 @@ The Python Zigzag implementation was changed to per-row character lists before t
 - Local test cases passed: 104 (28 for problems 1-3 and 76 for problems 4-10)
 - Local test cases failed: 0
 - All solution record statuses remain `pending`; these local tests are not official acceptance results.
+
+## Additional results: problems 11-20
+
+| Problem | Language | Cases passed | Result |
+|---|---|---:|---|
+| 11. Container With Most Water | Python 3 | 4/4 | PASS |
+| 11. Container With Most Water | Java 21 | 4/4 | PASS |
+| 12. Integer to Roman | Python 3 | 5/5 | PASS |
+| 12. Integer to Roman | Java 21 | 5/5 | PASS |
+| 13. Roman to Integer | Python 3 | 5/5 | PASS |
+| 13. Roman to Integer | Java 21 | 5/5 | PASS |
+| 14. Longest Common Prefix | Python 3 | 5/5 | PASS |
+| 14. Longest Common Prefix | Java 21 | 5/5 | PASS |
+| 15. 3Sum | Python 3 | 3/3 | PASS |
+| 15. 3Sum | Java 21 | 3/3 | PASS |
+| 16. 3Sum Closest | Python 3 | 3/3 | PASS |
+| 16. 3Sum Closest | Java 21 | 3/3 | PASS |
+| 17. Letter Combinations of a Phone Number | Python 3 | 3/3 | PASS |
+| 17. Letter Combinations of a Phone Number | Java 21 | 3/3 | PASS |
+| 18. 4Sum | Python 3 | 3/3 | PASS |
+| 18. 4Sum | Java 21 | 3/3 | PASS |
+| 19. Remove Nth Node From End of List | Python 3 | 3/3 | PASS |
+| 19. Remove Nth Node From End of List | Java 21 | 3/3 | PASS |
+| 20. Valid Parentheses | Python 3 | 5/5 | PASS |
+| 20. Valid Parentheses | Java 21 | 5/5 | PASS |
+| **Problems 11-20 total** | **Both languages** | **78/78** | **PASS** |
+
+The Java 4Sum assertion initially failed because the test harness compared valid quadruplets in different output orders. The solution output was order-independent as required; the test normalization was corrected and all 39 Java assertions for problems 11-20 then passed. No solution change was needed for that test-harness mismatch.
+
+## Batch 0001 cumulative totals (problems 1-20)
+- Problem records: 20
+- Solution records: 40 (Python 3 and Java 21 for each problem)
+- Concept Q&A records: 54 (2–4 per problem; this batch currently has 2–3 each)
+- Local test cases/assertions passed: 182 (91 Python and 91 Java)
+- Local test cases/assertions failed in final runs: 0
+- Every solution record has `self_check.ran=true` and records the published statement examples as passed.
+- Every solution record still has `status=pending`; local tests are not official LeetCode acceptance results.
