@@ -183,3 +183,24 @@ Tree tests include inorder traversal, unique-BST counts, strict BST-bound valida
 - Local tests/assertions passed: 808
 - Final-run failures: 0
 - Every solution record remains `pending` for independent/official evaluation; local self-checks are marked as run.
+
+
+# Batch 0006 local tests — problems 101-120
+
+Environment: CPython 3.13.5 and Java 21.0.12. The batch exercises tree mirroring, BFS traversals, reconstruction from traversal arrays, balanced BST construction, tree depth and path sums, in-place flattening, subsequence DP, next-pointer population, Pascal rows, and triangle DP.
+
+| Language | Cases/assertions passed | Result |
+|---|---:|---|
+| Python 3 | 41/41 | PASS |
+| Java 21 | 28/28 | PASS |
+| **Batch 0006 total** | **69 passing checks** | **PASS** |
+
+Tree checks verify reconstructed preorder/inorder results, BST ordering and balance, path-sum root-to-leaf behavior, flattened preorder with all left pointers null, and next pointers across both perfect and sparse trees. The Java harness groups several related checks into combined assertions, so its assertion count is lower than the Python case count.
+
+## Cumulative totals through problem 120
+- Problem records: 120
+- Solution records: 240 (Python 3 and Java 21 for each problem)
+- Concept Q&A records: 242
+- Local tests/assertions passed: 877
+- Final-run failures: 0
+- Every solution record remains `pending` for independent/official evaluation; local self-checks are marked as run.
