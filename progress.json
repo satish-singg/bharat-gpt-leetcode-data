@@ -1,16 +1,16 @@
 {
-  "last_batch": 5,
-  "last_problem_number": 100,
-  "problems_done": 100,
+  "last_batch": 6,
+  "last_problem_number": 120,
+  "problems_done": 120,
   "records": {
-    "problems": 100,
-    "solutions": 200,
-    "qa": 202,
-    "tested_solution_records": 200
+    "problems": 120,
+    "solutions": 240,
+    "qa": 242,
+    "tested_solution_records": 240
   },
   "skipped": 0,
-  "notes": "Batch 0001 covers problems 1-20; batch 0002 covers 21-40; batch 0003 covers 41-60; batch 0004 covers 61-80; batch 0005 covers 81-100. All 200 Python/Java solution records have been exercised in local harnesses. 808 local checks passed in final runs. Records remain pending until independent evaluation. User waived the separate held-out problem list.",
-  "local_test_cases_passed": 808,
+  "notes": "Batch 0001 covers problems 1-20; batch 0002 covers 21-40; batch 0003 covers 41-60; batch 0004 covers 61-80; batch 0005 covers 81-100; batch 0006 covers 101-120. All 240 Python/Java solution records have been exercised in local harnesses. 877 local checks passed in final runs. Records remain pending until independent evaluation. User waived the separate held-out problem list.",
+  "local_test_cases_passed": 877,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
