@@ -1,16 +1,16 @@
 {
-  "last_batch": 27,
-  "last_problem_number": 543,
-  "problems_done": 350,
+  "last_batch": 28,
+  "last_problem_number": 566,
+  "problems_done": 360,
   "records": {
-    "problems": 350,
-    "solutions": 700,
-    "qa": 702,
+    "problems": 360,
+    "solutions": 720,
+    "qa": 722,
     "tested_solution_records": 700
   },
   "skipped": 16,
-  "notes": "Dataset files are present through Batch 0027 (problems through #543). Batches 0025, 0026, and 0027 have all 60 Python 3/Java 21 solution records locally exercised: Batch 0025 passed 102 checks, Batch 0026 passed 106, and Batch 0027 passed 100; 0 failures. All Java snippets in these batches compiled. Batch 0027 problem 530 Java solution now resets traversal state on each call after a repeated-call test exposed stale instance state. Batch 0025 JSONL validated with 10 problems, 20 solutions, 20 Q&A records and aligned IDs. Batch 0026 and 0027 each contain 10 problems, 20 solutions, and 20 Q&A records; their checks are recorded. Batch 0028 has not been created yet. Local checks are not official LeetCode acceptance. Premium-locked questions remain excluded.",
-  "local_test_cases_passed": 2223,
+  "notes": "Dataset files are present through Batch 0027 (problems through #543). Batches 0025, 0026, and 0027 have all 60 Python 3/Java 21 solution records locally exercised and marked verified. Batch 0025 passed 102 checks; Batch 0026 passed 106 checks; Batch 0027 passed 102 checks (51 Python, 51 Java); all 30 Java snippets across these batches compiled. JSONL schemas, record counts, unique problem/solution/Q&A keys, and solution/problem title alignment passed for batches 0025-0027. Local verification is not official LeetCode acceptance. Batch 0028 has not been created yet. Premium-locked and SQL-only questions remain excluded.",
+  "local_test_cases_passed": 2225,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
