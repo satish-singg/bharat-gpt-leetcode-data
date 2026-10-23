@@ -629,3 +629,25 @@ Batch 0033 total: 112 assertions passed, 0 failed. Coverage includes alternating
 
 Cumulative recorded local checks through Batch 0033: 2,876 passed, 0 failed.
 
+## Batch 0034 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. The Python harness executed the exact JSONL solution snippets; the Java harness compiled and ran the Java snippets, including tree problems with a judge-compatible TreeNode.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 728 Self Dividing Numbers | 6/6 | 6/6 |
+| 733 Flood Fill | 6/6 | 6/6 |
+| 744 Find Smallest Letter Greater Than Target | 6/6 | 6/6 |
+| 746 Min Cost Climbing Stairs | 6/6 | 6/6 |
+| 747 Largest Number At Least Twice of Others | 6/6 | 6/6 |
+| 748 Shortest Completing Word | 5/5 | 5/5 |
+| 762 Prime Number of Set Bits in Binary Representation | 6/6 | 6/6 |
+| 766 Toeplitz Matrix | 6/6 | 6/6 |
+| 771 Jewels and Stones | 6/6 | 6/6 |
+| 783 Minimum Distance Between BST Nodes | 6/6 | 6/6 |
+| **Total** | **59/59** | **59/59** |
+
+Batch 0034 total: 118 assertions passed, 0 failed. Coverage includes digit divisibility and zero digits, flood-fill connectivity and same-color no-op behavior, upper-bound wraparound, stair-cost DP, dominant-element ties and singleton input, completing-word frequency requirements, prime set-bit counts, diagonal matrix consistency, case-sensitive jewel matching, and adjacent inorder differences. Post-push JSONL validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. All 20 solution records are marked verified for local testing only, not official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0034: 2,994 passed, 0 failed.
+
