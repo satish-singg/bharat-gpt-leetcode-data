@@ -19,8 +19,9 @@ Q&A: `{"number":3,"kind":"pattern_recognition","question":"How do I recognize th
 ## Quality
 - Every JSONL line must parse as one JSON object.
 - Solutions and explanations are written for this dataset; problem statements are paraphrased.
-- Status remains `pending` until independently tested. No acceptance or verification is implied.
-- `self_check.ran` remains false when examples have not actually been executed.
+- A solution status may be `verified` only after its local test suite has actually run and all recorded checks pass.
+- `verified` means locally tested, not accepted by official LeetCode; track platform acceptance separately if available.
+- Keep `self_check.ran=false` when examples/tests have not actually been executed.
 
 ## Resume
 Read `progress.json` and continue with the next ascending problem number. Commit each completed batch and update progress.
