@@ -1075,3 +1075,29 @@ Cumulative tracker after Batch 0052: 5,275 recorded checks passed, 0 failed. Ear
 Batch 0053 total: **82 assertions passed, 0 failed**. All ten Java solutions compiled successfully with `--release 21`. Coverage included digit windows, subtree averages, anagram signatures, percentage counting, digit frequencies, character inventory ratios, valid-price token parsing and discount formatting, min/max rounds, progressive tax brackets, and upper/lowercase letter matching. Post-push JSONL validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique problem and language keys, all 20 solution records marked verified with passed self-check counts, and aligned problem IDs. The cumulative tracker carries forward earlier recorded checks; earlier batches were not rerun as part of this verification.
 
 Cumulative tracker after Batch 0053: **5,357 recorded checks passed, 0 failed**. Earlier historical checks were not rerun during this batch.
+
+## Batch 0054 local verification — 2026-10-23
+
+### Environment and execution
+- Python: CPython 3.13.5; executed the actual Python solution implementations with assertions.
+- Java: compiled all ten Java solutions with `javac --release 21` and executed assertion harnesses on Java 21.
+- Local verification is not official LeetCode acceptance.
+
+### Results
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 2315 Count Asterisks | 4/4 PASS | 4/4 PASS |
+| 2319 Check if Matrix Is X-Matrix | 4/4 PASS | 4/4 PASS |
+| 2325 Decode the Message | 2/2 PASS | 2/2 PASS |
+| 2331 Evaluate Boolean Binary Tree | 2/2 PASS | 2/2 PASS |
+| 2335 Minimum Amount of Time to Fill Cups | 5/5 PASS | 5/5 PASS |
+| 2341 Maximum Number of Pairs in Array | 4/4 PASS | 4/4 PASS |
+| 2347 Best Poker Hand | 4/4 PASS | 4/4 PASS |
+| 2351 First Letter to Appear Twice | 3/3 PASS | 3/3 PASS |
+| 2357 Make Array Zero by Subtracting Equal Amounts | 4/4 PASS | 4/4 PASS |
+| 2363 Merge Similar Items | 2/2 PASS | 2/2 PASS |
+| **Total** | **34/34 PASS** | **34/34 PASS** |
+
+Batch 0054 total: **68 assertions passed, 0 failed**. All ten Java solutions compiled successfully. Coverage included paired-bar parsing, diagonal matrix conditions, substitution decoding, recursive boolean trees, greedy cup filling, pair counts and leftovers, poker-hand classification, first repeated characters, distinct positive values, and sorted weight aggregation. Post-push JSONL validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique problem/language keys, all solution self-checks marked verified with matching counts, and aligned IDs. The cumulative tracker carries forward earlier recorded checks; older batches were not rerun during this batch.
+
+Cumulative tracker after Batch 0054: **5,425 recorded checks passed, 0 failed**. Earlier historical checks were not rerun during this batch.
