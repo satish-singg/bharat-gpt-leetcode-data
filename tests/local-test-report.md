@@ -739,3 +739,25 @@ Batch 0038 total: 110 assertions passed, 0 failed. Coverage includes long-press 
 
 Cumulative recorded local checks through Batch 0038: 3,621 passed, 0 failed.
 
+## Batch 0039 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. Both languages were run locally and all ten Java solutions compiled.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 976 Largest Perimeter Triangle | 6/6 | 6/6 |
+| 977 Squares of a Sorted Array | 6/6 | 6/6 |
+| 985 Sum of Even Numbers After Queries | 5/5 | 5/5 |
+| 989 Add to Array-Form of Integer | 6/6 | 6/6 |
+| 997 Find the Town Judge | 6/6 | 6/6 |
+| 1002 Find Common Characters | 6/6 | 6/6 |
+| 1005 Maximize Sum Of Array After K Negations | 6/6 | 6/6 |
+| 1009 Complement of Base 10 Integer | 6/6 | 6/6 |
+| 1013 Partition Array Into Three Parts With Equal Sum | 8/8 | 8/8 |
+| 1018 Binary Prefix Divisible By 5 | 6/6 | 6/6 |
+| **Total** | **61/61** | **61/61** |
+
+Batch 0039 total: 122 assertions passed, 0 failed. Local tests caught two defects before pushing: the #1009 complement mask needed to stop when it reaches the number’s bit width, and the Python #1013 greedy split had to leave at least one element for the third nonempty part. Both fixes were rerun with the full suite. Post-push JSONL validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification is not official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0039: 3,743 passed, 0 failed.
+
