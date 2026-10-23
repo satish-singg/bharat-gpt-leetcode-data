@@ -805,3 +805,25 @@ Batch 0041 total: 110 assertions passed, 0 failed. Coverage includes IP replacem
 
 Cumulative recorded local checks through Batch 0041: 3,969 passed, 0 failed.
 
+## Batch 0042 independent local verification — 2026-10-23
+
+The Batch 0042 files were present remotely when resumed, so their solutions were independently tested locally before refreshing verification records. Environment: CPython 3.13.5 and javac/java 21.0.12.1. Both harnesses passed all 57 assertions; all Java solutions compiled.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 1207 Unique Number of Occurrences | 6/6 | 6/6 |
+| 1217 Minimum Cost to Move Chips to The Same Position | 6/6 | 6/6 |
+| 1221 Split a String in Balanced Strings | 6/6 | 6/6 |
+| 1232 Check If It Is a Straight Line | 6/6 | 6/6 |
+| 1252 Cells with Odd Values in a Matrix | 6/6 | 6/6 |
+| 1260 Shift 2D Grid | 5/5 | 5/5 |
+| 1266 Minimum Time Visiting All Points | 5/5 | 5/5 |
+| 1275 Find Winner on a Tic Tac Toe Game | 5/5 | 5/5 |
+| 1281 Subtract the Product and Sum of Digits of an Integer | 6/6 | 6/6 |
+| 1295 Find Numbers with Even Number of Digits | 6/6 | 6/6 |
+| **Total** | **57/57** | **57/57** |
+
+Batch 0042 total: 114 assertions passed, 0 failed. Tests cover duplicate frequency counts, parity-based chip movement, balanced-string prefixes, vertical/horizontal/diagonal collinearity, row/column parity toggles, grid shifts including k=0 and full cycles, Chebyshev travel distance, Tic-Tac-Toe wins/pending/draw, digit product-sum cases including zeros, and even digit counts. JSONL counts, unique language-specific keys, and problem alignment were checked. Local testing does not imply official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0042: 4,083 passed, 0 failed.
+
