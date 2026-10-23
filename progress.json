@@ -1,16 +1,16 @@
 {
-  "last_batch": 21,
-  "last_problem_number": 441,
-  "problems_done": 290,
+  "last_batch": 22,
+  "last_problem_number": 454,
+  "problems_done": 300,
   "records": {
-    "problems": 290,
-    "solutions": 580,
-    "qa": 582,
-    "tested_solution_records": 580
+    "problems": 300,
+    "solutions": 600,
+    "qa": 602,
+    "tested_solution_records": 600
   },
   "skipped": 16,
-  "notes": "Batch 0021 problems 424, 427, 429, 430, 433, 435, 437, 438, 440, and 441 added. Python 3 and Java 21 spot-test harnesses passed 44 recorded cases (22 each); Java compiled with javac 21.0.12.1. All 20 solution records have self_check.ran=true and local case counts. Status remains pending official/platform evaluation; local checks are not official judge results. Premium-locked questions were excluded.",
-  "local_test_cases_passed": 1775,
+  "notes": "Batch 0022 problems 442, 443, 445, 446, 448, 450, 451, 452, 453, and 454 added. Python 3 and Java 21 spot-test harnesses passed 30 recorded cases (15 each); Java compiled with javac 21.0.12.1. All 20 solution records have self_check.ran=true and local case counts. Status remains pending official/platform evaluation; local checks are not official judge results. Premium-locked questions were excluded.",
+  "local_test_cases_passed": 1805,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
