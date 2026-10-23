@@ -397,3 +397,20 @@ Date: 2026-10-23 (UTC)
 - Java 21: compiled successfully; 6/6 local cases passed.
 - Coverage: the statement example `[4,6,7,7]`, descending/duplicate-heavy input, empty input, a strictly increasing input, all-equal values, and negative values with duplicates. Outputs were compared as sets of subsequences so result ordering is not assumed.
 - Both solution records for problem 491 in `data/solutions/batch_0025.jsonl` now record the executed checks. Status remains `pending`; these are local tests, not official LeetCode acceptance.
+
+## Additional targeted verification — Batch 0025
+
+Date: 2026-10-23 (UTC)
+Environment: CPython 3.13.5 and javac/java 21.0.12.1.
+
+| Problem | Python 3 | Java 21 | Result |
+|---|---:|---:|---|
+| 494 Target Sum | 6/6 | 6/6 (compiled) | PASS |
+| 496 Next Greater Element I | 5/5 | 5/5 (compiled) | PASS |
+| 498 Diagonal Traverse | 5/5 | 5/5 (compiled) | PASS |
+| 500 Keyboard Row | 4/4 | 4/4 (compiled) | PASS |
+| 503 Next Greater Element II | 5/5 | 5/5 (compiled) | PASS |
+| 506 Relative Ranks | 4/4 | 4/4 (compiled) | PASS |
+| **Total** | **29/29** | **29/29** | **58/58 PASS** |
+
+Coverage included zero-valued Target Sum inputs, impossible targets, monotonic-stack cases and absent next-greater values, square/rectangular/single-row/single-column matrices, case-insensitive keyboard rows, circular arrays with duplicates and decreasing values, and short/long rank lists. A Keyboard Row expected value was corrected in the test harness: `Type` is entirely on the top keyboard row, so it belongs in the output. After correcting the expectation, all tests passed. Both languages were run locally; all six Java solutions compiled. The corresponding records now set `self_check.ran=true` with the executed case counts. Status remains `pending` pending independent/official evaluation.
