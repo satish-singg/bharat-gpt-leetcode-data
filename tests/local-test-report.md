@@ -562,3 +562,25 @@ All solution records in batches 0025–0029 are now marked verified after local 
 This audit reran the batch 0030 Python 3 and Java 21 implementations locally. CPython 3.13.5: 50/50 assertions passed. Java 21.0.12.1: all ten solution classes compiled and 50/50 assertions passed. Cases covered tree-string parentheses/right-only children, duplicate-file groups and content parsing, triangle counts including zeros and equal sides, merging null/non-null trees, task cooldown/no-cooldown cases, adding a row at depth 1/2/3 and beyond the tree, products with negative values, level averages including negative nodes, fixed-window averages with negative sums, and duplicate/missing values. No solution failures.
 
 The 20 solution records in data/solutions/batch_0030.jsonl are now marked verified with their existing executed self_check counts. This is local verification only, not official LeetCode acceptance. Batches 0025–0030 now have 606/606 local checks passed (102 + 106 + 102 + 94 + 102 + 100), 0 failed, and all 120 solution records marked verified. Cumulative local checks remain 2,521 passed, 0 failed; Batch 0031 is the next pending solution audit.
+
+## Batch 0031 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. All ten Java solution snippets compiled and ran.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 646 Maximum Length of Pair Chain | 5/5 | 5/5 |
+| 647 Palindromic Substrings | 5/5 | 5/5 |
+| 648 Replace Words | 5/5 | 5/5 |
+| 649 Dota2 Senate | 6/6 | 6/6 |
+| 650 2 Keys Keyboard | 6/6 | 6/6 |
+| 652 Find Duplicate Subtrees | 5/5 | 5/5 |
+| 653 Two Sum IV - Input is a BST | 5/5 | 5/5 |
+| 654 Maximum Binary Tree | 5/5 | 5/5 |
+| 657 Robot Return to Origin | 6/6 | 6/6 |
+| 661 Image Smoother | 5/5 | 5/5 |
+| **Total** | **53/53** | **53/53** |
+
+Batch 0031 total: 106 assertions passed, 0 failed. Tests include published examples, empty/singleton and boundary inputs, duplicates, tree structures, negative values, and matrix borders. Local testing caught an error in the Python #650 implementation: it subtracted one from the remaining prime factor sum. The implementation was corrected to add the remaining factor when greater than one, then the full Python and Java suites passed. JSONL validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique solution keys, and aligned problem IDs. All 20 solution records are marked verified after these local tests; status is not a claim of official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0031: 2,627 passed, 0 failed.
