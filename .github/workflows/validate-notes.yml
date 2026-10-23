@@ -1,0 +1,19 @@
+name: validate-notes
+on:
+  push:
+    paths: ["fixnotes/out/**", "fixnotes/redo_annotations_out.jsonl", "data/solutions/**", "tools/validate_notes.py"]
+  workflow_dispatch: {}
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Notes fix output (Part A)
+        run: |
+          if ls fixnotes/out/*.jsonl >/dev/null 2>&1; then python3 tools/validate_notes.py --in fixnotes/in --out fixnotes/out; else echo "no fix output yet"; fi
+      - name: New batches (0060 and later)
+        run: |
+          files=$(ls data/solutions/batch_*.jsonl | awk -F'[_.]' '{ if ($3+0 >= 60) print }')
+          if [ -n "$files" ]; then python3 tools/validate_notes.py --solutions $files; else echo "no new batches yet"; fi

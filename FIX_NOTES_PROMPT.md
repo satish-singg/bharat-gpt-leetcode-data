@@ -38,16 +38,14 @@ Rules:
 Input `fixnotes/redo_annotations_in.jsonl` (69 records, same format as `annotate/batch_*.jsonl`; `code` is Python 3 from another repo). Write `fixnotes/redo_annotations_out.jsonl` with `{"id","notes"}` in the same ORDER (six lines, same rules, no complexity_reason).
 These were rejected by the checker or the old note said the code is wrong. For each: RUN the code against the statement examples and a small brute force. If the code is correct, write a normal note. If it really is wrong, do not write notes; write `{"id": "...", "flag": "<one sentence: input where it fails and what it returns>"}`. (One of them, `342:kamyu104:3` Power of Four, is probably correct - the old note called it wrong. Check it.)
 
-## Part C: check
-Before EVERY commit run:
-```
-python3 tools/validate_notes.py --in fixnotes/in --out fixnotes/out
-python3 tools/apply_notes_fix.py
-```
-`validate_notes.py` must print `0 failed`; `apply_notes_fix.py` writes the accepted notes into `data/solutions/`, sets `status: verified` for batches 0010-0024 (they have PASS test reports) and unifies `java21` -> `java`. Fix every REJECT line it prints and run again.
-Batches 0004-0009 and the rest of 0001-0003 have no local test report: run local tests for them (Python 3 and Java 21 as before), save `tests/batch_NNNN-test-report.md` in the same table format as batch 0010, then run apply_notes_fix.py again so they become verified.
+## Part C: check (you have no shell, so the repo checks for you)
+You write only `fixnotes/out/batch_NNNN.jsonl` and `fixnotes/redo_annotations_out.jsonl`; do NOT edit `data/` for this task (the owner runs `tools/apply_notes_fix.py`, which writes the notes into `data/solutions/`, sets `verified` for batches 0010-0024 and unifies `java21` -> `java`).
+Every push triggers the GitHub Action `validate-notes` (file `.github/workflows/validate-notes.yml`, runs `tools/validate_notes.py`). After each push open the run for your commit (Actions tab, or the commit status): it must be green. If it is red, the log lists each failing id and the reason (`FAIL batch_0004.jsonl 71:python3 | ...`): rewrite exactly those lines and push again. Never report a batch as done while its check is red.
+If you CAN run Python yourself (your own sandbox with the files from the repo), also run `python3 tools/validate_notes.py --in fixnotes/in --out fixnotes/out` before pushing - it is the same check.
+Batches 0004-0009 and the rest of 0001-0003 have no local test report: run local tests for them in your sandbox (Python 3 and Java 21 as before) and save `tests/batch_NNNN-test-report.md` in the same table format as batch 0010 (tests only; changing status is done by the apply script).
 
 ## Process
-- Work in ascending batch order, 5-8 batches per session, commit + push after every batch (`fix notes batch 0004`).
-- Do not change anything else in `data/` except `notes`, `complexity_reason`, `status`, `language`. Do not touch `corpus/`, `annotate/`, `annotated/batch_*.jsonl`.
-- End of every session report: last batch done, validator output, ids where the code looked wrong, anything you could not verify.
+- `git pull --rebase` (or re-read the latest repo state through the connector) before every push, so you never overwrite files.
+- Work in ascending batch order, 5-8 batches per session, one commit per batch (`fix notes batch 0004`).
+- Do not change anything in `data/`, `corpus/`, `annotate/`, `annotated/` for this task.
+- End of every session report: last batch done, the result of the `validate-notes` run for your last commit (green/red and the failure count), ids where the code looked wrong, anything you could not verify. Do not claim a result you did not see.
