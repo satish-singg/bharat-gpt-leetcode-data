@@ -1,16 +1,16 @@
 {
-  "last_batch": 38,
-  "last_problem_number": 965,
-  "problems_done": 470,
+  "last_batch": 39,
+  "last_problem_number": 1018,
+  "problems_done": 480,
   "records": {
-    "problems": 470,
-    "solutions": 940,
-    "qa": 942,
-    "tested_solution_records": 940
+    "problems": 480,
+    "solutions": 960,
+    "qa": 962,
+    "tested_solution_records": 960
   },
   "skipped": 16,
-  "notes": "Progress through Batch 0038 (highest problem #965). Batches 0025–0038 have all 280 Python 3/Java 21 solution records locally tested and marked verified. Batch 0038 passed 55 Python assertions and 55 Java assertions (110 total); all Java solutions compiled under Java 21. Cumulative local checks: 3,621 passed, 0 failed. Batch 0038 JSONL counts, unique keys, and problem/solution/Q&A alignment passed after push. Local verification is not official LeetCode acceptance. Premium-locked and SQL-only questions remain excluded.",
-  "local_test_cases_passed": 3621,
+  "notes": "Progress through Batch 0039 (highest problem #1018). Batches 0025–0039 have all 300 Python 3/Java 21 solution records locally tested and marked verified. Batch 0039 passed 61 Python assertions and 61 Java assertions (122 total); all ten Java solutions compiled under Java 21. Local testing caught and fixed a bit-mask boundary defect in #1009 and a final-partition boundary in Python #1013 before the solution commit. Cumulative local checks: 3,743 passed, 0 failed. Batch 0039 JSONL counts, unique keys, and problem/solution/Q&A alignment passed after push. Local verification is not official LeetCode acceptance. Premium-locked and SQL-only questions remain excluded.",
+  "local_test_cases_passed": 3743,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
