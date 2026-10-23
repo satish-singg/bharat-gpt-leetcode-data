@@ -414,3 +414,16 @@ Environment: CPython 3.13.5 and javac/java 21.0.12.1.
 | **Total** | **29/29** | **29/29** | **58/58 PASS** |
 
 Coverage included zero-valued Target Sum inputs, impossible targets, monotonic-stack cases and absent next-greater values, square/rectangular/single-row/single-column matrices, case-insensitive keyboard rows, circular arrays with duplicates and decreasing values, and short/long rank lists. A Keyboard Row expected value was corrected in the test harness: `Type` is entirely on the top keyboard row, so it belongs in the output. After correcting the expectation, all tests passed. Both languages were run locally; all six Java solutions compiled. The corresponding records now set `self_check.ran=true` with the executed case counts. Status remains `pending` pending independent/official evaluation.
+
+## Additional targeted verification — Batch 0025 tree problems
+
+Date: 2026-10-23 (UTC)
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. Java harnesses compiled successfully with judge-compatible `TreeNode` definitions.
+
+| Problem | Python 3 | Java 21 | Result |
+|---|---:|---:|---|
+| 501 Find Mode in Binary Search Tree | 5/5 | 5/5 | PASS |
+| 508 Most Frequent Subtree Sum | 5/5 | 5/5 | PASS |
+| **Total** | **10/10** | **10/10** | **20/20 PASS** |
+
+Coverage included a duplicate mode, tied modes, a single-node tree, multiple unique subtree sums, repeated subtree sums, and all-zero trees. Output order was normalized where the problem permits any order. The corresponding four solution records now record their local checks; status remains `pending`, not official acceptance.
