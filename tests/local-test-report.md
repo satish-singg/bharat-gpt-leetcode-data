@@ -871,3 +871,25 @@ Batch 0044 total: 118 cases passed, 0 failed. Coverage includes lucky-frequency 
 
 Cumulative recorded local checks through Batch 0044: 4,345 passed, 0 failed.
 
+## Batch 0045 independent local verification — 2026-10-23
+
+The Batch 0045 records were present remotely when resumed; both language implementations were independently exercised locally before refreshing verification metadata. Environment: CPython 3.13.5 and javac/java 21.0.12.1. All Java solutions compiled and both harnesses passed 58 cases.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 1491 Average Salary Excluding the Minimum and Maximum Salary | 5/5 | 5/5 |
+| 1496 Path Crossing | 6/6 | 6/6 |
+| 1502 Can Make Arithmetic Progression From Sequence | 6/6 | 6/6 |
+| 1512 Number of Good Pairs | 6/6 | 6/6 |
+| 1528 Shuffle String | 5/5 | 5/5 |
+| 1534 Count Good Triplets | 6/6 | 6/6 |
+| 1572 Matrix Diagonal Sum | 6/6 | 6/6 |
+| 1582 Special Positions in a Binary Matrix | 6/6 | 6/6 |
+| 1603 Design Parking System | 6/6 | 6/6 |
+| 1614 Maximum Nesting Depth of the Parentheses | 6/6 | 6/6 |
+| **Total** | **58/58** | **58/58** |
+
+Batch 0045 total: 116 cases passed, 0 failed. Coverage includes excluding salary extremes, revisit detection in paths, arithmetic progression boundaries, duplicate pair counts, index-based string restoration, triplet constraints, odd/even matrix diagonal handling, row/column uniqueness, parking capacity exhaustion, and nested-parentheses depth. JSONL counts, unique language-specific keys, and problem alignment were checked. Local testing does not imply official LeetCode acceptance.
+
+**The requested 45-batch target is now reached.** Cumulative recorded local checks through Batch 0045: 4,461 passed, 0 failed.
+
