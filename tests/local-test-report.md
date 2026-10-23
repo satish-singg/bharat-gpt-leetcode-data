@@ -435,3 +435,23 @@ Coverage included a duplicate mode, tied modes, a single-node tree, multiple uni
 - Cumulative local checks recorded in progress.json: 2,017 passed, 0 failed.
 - Batch 0026 and 0027 files exist but their solution code remains untested and pending. Batch 0028 is not yet present.
 - Local checks are not official LeetCode results. Solution statuses remain pending independent evaluation.
+
+## Batch 0026 — local test results (2026-10-23)
+
+Environment: CPython 3.13.5 and Java 21. All ten Java solution snippets compiled and ran.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 509 Fibonacci Number | 6/6 | 6/6 |
+| 513 Find Bottom Left Tree Value | 5/5 | 5/5 |
+| 515 Find Largest Value in Each Tree Row | 5/5 | 5/5 |
+| 520 Detect Capital | 6/6 | 6/6 |
+| 521 Longest Uncommon Subsequence I | 5/5 | 5/5 |
+| 522 Longest Uncommon Subsequence II | 5/5 | 5/5 |
+| 523 Continuous Subarray Sum | 6/6 | 6/6 |
+| 524 Longest Word in Dictionary through Deleting | 5/5 | 5/5 |
+| 525 Contiguous Array | 5/5 | 5/5 |
+| 526 Beautiful Arrangement | 5/5 | 5/5 |
+| **Total** | **53/53** | **53/53** |
+
+Batch 0026 total: 106 checks passed, 0 failed. All 20 solution records record the executed checks. Status remains pending; local tests are not official judge acceptance.
