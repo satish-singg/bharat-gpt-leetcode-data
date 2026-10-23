@@ -739,181 +739,25 @@ Batch 0038 total: 110 assertions passed, 0 failed. Coverage includes long-press 
 
 Cumulative recorded local checks through Batch 0038: 3,473 passed, 0 failed.
 
-## Batch 0039 local verification — 2026-10-23
+## Batch 0039 independent local verification — 2026-10-23
 
-Environment: CPython 3.13.5 and javac/java 21.0.12.1. Both languages were run locally and all ten Java solutions compiled.
+The batch files were audited and the Python 3 and Java 21 implementations were run locally. Environment: CPython 3.13.5 and javac/java 21.0.12.1. The Java harness compiled successfully. During edge-case testing, the three-part equal-sum condition was checked with `[1,-1,1,-1]` to ensure two zero-sum prefixes do not incorrectly count as three nonempty parts. The committed implementations leave the final array element available for the third partition.
 
-| Problem | Python 3 | Java 21 |
-|---|---:|---:|
-| 976 Largest Perimeter Triangle | 6/6 | 6/6 |
-| 977 Squares of a Sorted Array | 6/6 | 6/6 |
-| 985 Sum of Even Numbers After Queries | 5/5 | 5/5 |
-| 989 Add to Array-Form of Integer | 6/6 | 6/6 |
-| 997 Find the Town Judge | 6/6 | 6/6 |
-| 1002 Find Common Characters | 6/6 | 6/6 |
-| 1005 Maximize Sum Of Array After K Negations | 6/6 | 6/6 |
-| 1009 Complement of Base 10 Integer | 6/6 | 6/6 |
-| 1013 Partition Array Into Three Parts With Equal Sum | 8/8 | 8/8 |
-| 1018 Binary Prefix Divisible By 5 | 6/6 | 6/6 |
-| **Total** | **61/61** | **61/61** |
-
-Batch 0039 total: 122 assertions passed, 0 failed. Local tests caught two defects before pushing: the #1009 complement mask needed to stop when it reaches the number’s bit width, and the Python #1013 greedy split had to leave at least one element for the third nonempty part. Both fixes were rerun with the full suite. Post-push JSONL validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification is not official LeetCode acceptance.
-
-Cumulative recorded local checks through Batch 0039: 3,595 passed, 0 failed.
-
-## Batch 0040 local verification — 2026-10-23
-
-Environment: CPython 3.13.5 and javac/java 21.0.12.1. Both language harnesses executed the exact batch solution snippets; all ten Java solutions compiled.
-
-| Problem | Python 3 | Java 21 |
-|---|---:|---:|
-| 1021 Remove Outermost Parentheses | 5/5 | 5/5 |
-| 1022 Sum of Root To Leaf Binary Numbers | 5/5 | 5/5 |
-| 1025 Divisor Game | 6/6 | 6/6 |
-| 1030 Matrix Cells in Distance Order | 4/4 | 4/4 |
-| 1037 Valid Boomerang | 5/5 | 5/5 |
-| 1046 Last Stone Weight | 6/6 | 6/6 |
-| 1047 Remove All Adjacent Duplicates In String | 6/6 | 6/6 |
-| 1051 Height Checker | 6/6 | 6/6 |
-| 1071 Greatest Common Divisor of Strings | 6/6 | 6/6 |
-| 1089 Duplicate Zeros | 6/6 | 6/6 |
-| **Total** | **55/55** | **55/55** |
-
-Batch 0040 total: 110 assertions passed, 0 failed. Coverage includes nested primitive parentheses, root-to-leaf binary values, divisor-game parity, Manhattan distance tie ordering, collinearity, heap edge cases, cascading adjacent duplicates, sorted-height comparisons, string GCD compatibility, and zeros at array boundaries. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification does not mean official LeetCode acceptance.
-
-Cumulative recorded local checks through Batch 0040: 3,705 passed, 0 failed.
-
-## Batch 0041 local verification — 2026-10-23
-
-Environment: CPython 3.13.5 and javac/java 21.0.12.1. Both language suites ran locally and all ten Java snippets compiled.
-
-| Problem | Python 3 | Java 21 |
-|---|---:|---:|
-| 1108 Defanging an IP Address | 5/5 | 5/5 |
-| 1122 Relative Sort Array | 5/5 | 5/5 |
-| 1128 Number of Equivalent Domino Pairs | 5/5 | 5/5 |
-| 1137 N-th Tribonacci Number | 6/6 | 6/6 |
-| 1154 Day of the Year | 6/6 | 6/6 |
-| 1160 Find Words That Can Be Formed by Characters | 6/6 | 6/6 |
-| 1170 Compare Strings by Frequency of the Smallest Character | 5/5 | 5/5 |
-| 1184 Distance Between Bus Stops | 6/6 | 6/6 |
-| 1185 Day of the Week | 6/6 | 6/6 |
-| 1200 Minimum Absolute Difference | 5/5 | 5/5 |
-| **Total** | **55/55** | **55/55** |
-
-Batch 0041 total: 110 assertions passed, 0 failed. Coverage includes address replacement, relative sort priority and leftovers, reversed domino equivalence, Tribonacci base cases, Gregorian leap-year rules, character-frequency limits, strictly-greater frequency queries, circular route direction, weekday boundaries, and multiple minimum-difference pairs. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification does not mean official LeetCode acceptance.
-
-Cumulative recorded local checks through Batch 0041: 3,815 passed, 0 failed.
-
-## Batch 0042 local verification — 2026-10-23
-
-Environment: CPython 3.13.5 and javac/java 21.0.12.1. Both language suites executed the exact solution snippets locally; all ten Java solutions compiled.
-
-| Problem | Python 3 | Java 21 |
-|---|---:|---:|
-| 1207 Unique Number of Occurrences | 6/6 | 6/6 |
-| 1217 Minimum Cost to Move Chips to The Same Position | 6/6 | 6/6 |
-| 1221 Split a String in Balanced Strings | 6/6 | 6/6 |
-| 1232 Check If It Is a Straight Line | 6/6 | 6/6 |
-| 1252 Cells with Odd Values in a Matrix | 6/6 | 6/6 |
-| 1260 Shift 2D Grid | 5/5 | 5/5 |
-| 1266 Minimum Time Visiting All Points | 5/5 | 5/5 |
-| 1275 Find Winner on a Tic Tac Toe Game | 5/5 | 5/5 |
-| 1281 Subtract the Product and Sum of Digits of an Integer | 6/6 | 6/6 |
-| 1295 Find Numbers with Even Number of Digits | 6/6 | 6/6 |
-| **Total** | **57/57** | **57/57** |
-
-Batch 0042 total: 114 assertions passed, 0 failed. Coverage includes duplicate frequency counts, chip parity, balanced-string segmentation, collinear points, row/column increments, grid shifts across wrap boundaries, diagonal point movement, tic-tac-toe wins/draw/pending states, digit product-minus-sum including zero digits, and decimal digit parity. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification does not mean official LeetCode acceptance.
-
-Cumulative recorded local checks through Batch 0042: 3,929 passed, 0 failed.
-
-## Batch 0043 local verification — 2026-10-23
-
-Environment: CPython 3.13.5 and javac/java 21.0.12.1. The exact Python and Java solution snippets were executed locally; all ten Java snippets compiled.
-
-| Problem | Python 3 | Java 21 |
-|---|---:|---:|
-| 1304 Find N Unique Integers Sum up to Zero | 18/18 | 18/18 |
-| 1313 Decompress Run-Length Encoded List | 6/6 | 6/6 |
-| 1323 Maximum 69 Number | 6/6 | 6/6 |
-| 1331 Rank Transform of an Array | 6/6 | 6/6 |
-| 1342 Number of Steps to Reduce a Number to Zero | 6/6 | 6/6 |
-| 1351 Count Negative Numbers in a Sorted Matrix | 6/6 | 6/6 |
-| 1365 How Many Numbers Are Smaller Than the Current Number | 6/6 | 6/6 |
-| 1370 Increasing Decreasing String | 6/6 | 6/6 |
-| 1380 Lucky Numbers in a Matrix | 6/6 | 6/6 |
-| 1389 Create Target Array in the Given Order | 6/6 | 6/6 |
-| **Total** | **72/72** | **72/72** |
-
-Batch 0043 total: 144 assertions passed, 0 failed. Coverage includes distinct zero-sum outputs, run-length expansion including zero frequencies, leftmost digit replacement, rank ties, parity step counts, negative matrix entries, duplicate ranks, ascending/descending character sweeps, row-minimum/column-maximum intersections, and repeated insertion indices. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification is not official LeetCode acceptance.
-
-Cumulative recorded local checks through Batch 0043: 4,073 passed, 0 failed.
-
-## Batch 0044 local verification — 2026-10-23
-
-Environment: CPython 3.13.5 and javac/java 21.0.12.1. All ten Java solutions compiled and both language harnesses passed.
-
-| Problem | Python 3 | Java 21 |
-|---|---:|---:|
-| 1394 Find Lucky Integer in an Array | 6/6 | 6/6 |
-| 1403 Minimum Subsequence in Non-Increasing Order | 6/6 | 6/6 |
-| 1431 Kids With the Greatest Number of Candies | 6/6 | 6/6 |
-| 1436 Destination City | 5/5 | 5/5 |
-| 1441 Build an Array With Stack Operations | 6/6 | 6/6 |
-| 1450 Number of Students Doing Homework at a Given Time | 6/6 | 6/6 |
-| 1460 Make Two Arrays Equal by Reversing Subarrays | 6/6 | 6/6 |
-| 1470 Shuffle the Array | 6/6 | 6/6 |
-| 1475 Final Prices With a Special Discount in a Shop | 6/6 | 6/6 |
-| 1480 Running Sum of 1d Array | 6/6 | 6/6 |
-| **Total** | **59/59** | **59/59** |
-
-Batch 0044 total: 118 assertions passed, 0 failed. Coverage includes lucky-frequency selection, minimum strict-majority subsequences, candy thresholds, destination detection, stack operation sequences, inclusive time intervals, multiset equality, array interleaving, next-smaller-or-equal discounts, and prefix accumulation. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification is not official LeetCode acceptance.
-
-Cumulative recorded local checks through Batch 0044: 4,191 passed, 0 failed.
-
-## Batch 0045 local verification — 2026-10-23
-
-Environment: CPython 3.13.5 and javac/java 21.0.12.1. The Python and Java snippets were executed locally; all ten Java solutions compiled.
-
-| Problem | Python 3 | Java 21 |
-|---|---:|---:|
-| 1491 Average Salary Excluding the Minimum and Maximum Salary | 5/5 | 5/5 |
-| 1496 Path Crossing | 6/6 | 6/6 |
-| 1502 Can Make Arithmetic Progression From Sequence | 6/6 | 6/6 |
-| 1512 Number of Good Pairs | 6/6 | 6/6 |
-| 1528 Shuffle String | 5/5 | 5/5 |
-| 1534 Count Good Triplets | 6/6 | 6/6 |
-| 1572 Matrix Diagonal Sum | 6/6 | 6/6 |
-| 1582 Special Positions in a Binary Matrix | 6/6 | 6/6 |
-| 1603 Design Parking System | 6/6 | 6/6 |
-| 1614 Maximum Nesting Depth of the Parentheses | 6/6 | 6/6 |
-| **Total** | **58/58** | **58/58** |
-
-Batch 0045 total: 116 assertions passed, 0 failed. Coverage includes average calculation excluding extrema, path revisits, arithmetic progression, duplicate pair counts, character-position reconstruction, triplet constraints, odd/even matrix diagonals, row/column uniqueness, parking capacity exhaustion, and parenthesis depth. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs.
-
-## Batch target completion
-
-Batch 0045 has been locally tested and pushed. The cumulative assertion count was recalculated across the recorded batch totals; earlier cumulative figures from Batch 0037 onward were overstated by 148 because Batch 0037's 148 assertions had been added twice. Correct cumulative count through Batch 0045: **4,307 passed, 0 failed**. This is local verification, not official LeetCode acceptance.
-
-## Batch 0039 local verification — 2026-10-23
-
-Environment: CPython 3.13.5 and javac/java 21.0.12.1. The Python harness passed 48 assertions; the Java 21 harness compiled and passed 48 assertions. During testing, the three-part equal-sum edge case `[1,-1,1,-1]` exposed a bug in the initial scan: it could accept two target-sum prefixes without leaving a nonempty third segment. The Python and Java solutions were corrected to require at least one element after the second target-sum segment, and the harnesses were rerun successfully before pushing the solution file.
-
-| Problem | Python 3 | Java 21 |
+| Problem | Python 3 checks | Java 21 checks |
 |---|---:|---:|
 | 976 Largest Perimeter Triangle | 5/5 | 5/5 |
 | 977 Squares of a Sorted Array | 5/5 | 5/5 |
+| 985 Sum of Even Numbers After Queries | 5/5 | 5/5 |
 | 989 Add to Array-Form of Integer | 5/5 | 5/5 |
-| 993 Cousins in Binary Tree | 5/5 | 5/5 |
 | 997 Find the Town Judge | 5/5 | 5/5 |
-| 999 Available Captures for Rook | 3/3 | 3/3 |
 | 1002 Find Common Characters | 5/5 | 5/5 |
-| 1005 Maximize Sum Of Array After K Negations | 5/5 | 5/5 |
+| 1005 Maximize Sum Of Array After K Negations | 11/11 | 11/11 |
 | 1009 Complement of Base 10 Integer | 5/5 | 5/5 |
-| 1013 Partition Array Into Three Parts With Equal Sum | 5/5 | 5/5 |
-| **Total** | **48/48** | **48/48** |
+| 1013 Partition Array Into Three Parts With Equal Sum | 11/11 | 11/11 |
+| 1018 Binary Prefix Divisible By 5 | 6/6 | 6/6 |
+| **Total** | **63/63** | **63/63** |
 
-Batch 0039 total: 96 assertions passed, 0 failed. Coverage includes triangle validity, two-pointer square ordering, decimal carry, cousin depth/parent conditions, judge trust scores, rook line-of-sight blockers, character-frequency intersections, sign flips including odd remaining flips, zero bitwise complement, and nonempty equal-sum partitions. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification does not imply official LeetCode acceptance.
+Batch 0039 total: 126 assertions passed, 0 failed. Tests covered triangle validity, sorted squares, incremental even-sum updates, digit carry, trust scores, frequency intersections, odd/even negation counts, zero and nonzero bitwise complements, three nonempty equal-sum segments, and binary prefixes modulo five. Post-test validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification is not official LeetCode acceptance.
 
-Cumulative recorded local checks through Batch 0039: 3,717 passed, 0 failed.
+Cumulative local checks through Batch 0039: 3,747 passed, 0 failed.
 
