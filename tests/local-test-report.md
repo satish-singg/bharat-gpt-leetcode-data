@@ -495,3 +495,23 @@ Environment: CPython 3.13.5 and javac/java 21.0.12.1. All ten Java solution snip
 | **Total** | **47/47** | **47/47** |
 
 Batch 0028 total: 94 checks passed, 0 failed. Tests cover bracket construction, disconnected and connected graphs, attendance violations, one/two/many-number division formatting, word reversal, N-ary and binary trees, prefix-sum counts including negative values, sorted pair minima, and valid/invalid matrix reshapes. A few expected values in the local harness were corrected during test development (Array Partition and Binary Tree Tilt); the final runs passed. JSONL validation confirmed 10 problem records, 20 solution records, 20 Q&A records, and aligned problem IDs. All 20 solution records now contain executed local check counts; statuses remain pending official/independent evaluation.
+
+## Batch 0029 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. All ten Java solution snippets compiled and ran.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 572 Subtree of Another Tree | 5/5 | 5/5 |
+| 575 Distribute Candies | 5/5 | 5/5 |
+| 581 Shortest Unsorted Continuous Subarray | 5/5 | 5/5 |
+| 583 Delete Operation for Two Strings | 5/5 | 5/5 |
+| 589 N-ary Tree Preorder Traversal | 5/5 | 5/5 |
+| 590 N-ary Tree Postorder Traversal | 5/5 | 5/5 |
+| 594 Longest Harmonious Subsequence | 5/5 | 5/5 |
+| 598 Range Addition II | 5/5 | 5/5 |
+| 599 Minimum Index Sum of Two Lists | 5/5 | 5/5 |
+| 605 Can Place Flowers | 6/6 | 6/6 |
+| **Total** | **51/51** | **51/51** |
+
+Batch 0029 total: 102 checks passed, 0 failed. The checks cover subtree equality and null boundaries, distinct candy limits, sorted and unsorted arrays, LCS deletion cases, N-ary preorder/postorder, neighboring frequency counts, empty and overlapping range operations, tied restaurant index sums, and flowerbed boundaries. Testing exposed an edge case in Can Place Flowers when n=0; both implementations now return true immediately for zero requested plantings, and the added test passed. JSONL validated with 10 problem records, 20 solution records, 20 Q&A records and aligned IDs. All 20 solution records record executed checks; status remains pending independent/official evaluation.
