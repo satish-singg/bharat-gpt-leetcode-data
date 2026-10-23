@@ -475,3 +475,23 @@ Environment: CPython 3.13.5 and javac/java 21.0.12.1. All ten Java solution snip
 | **Total** | **50/50** | **50/50** |
 
 Batch 0027 total: 100 checks passed, 0 failed. The Java solution for problem 530 was improved to reset traversal state on each public call after a repeated-call harness exposed stale instance state. The corrected version passed. A Reverse String II test expectation was corrected to match the specified alternating 2k chunks; all cases then passed. All 20 solution records now have actual local check counts; statuses remain pending independent/official evaluation.
+
+## Batch 0028 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. All ten Java solution snippets compiled and ran.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 544 Output Contest Matches | 3/3 | 3/3 |
+| 547 Number of Provinces | 4/4 | 4/4 |
+| 551 Student Attendance Record I | 5/5 | 5/5 |
+| 553 Optimal Division | 5/5 | 5/5 |
+| 557 Reverse Words in a String III | 5/5 | 5/5 |
+| 559 Maximum Depth of N-ary Tree | 5/5 | 5/5 |
+| 560 Subarray Sum Equals K | 5/5 | 5/5 |
+| 561 Array Partition | 5/5 | 5/5 |
+| 563 Binary Tree Tilt | 5/5 | 5/5 |
+| 566 Reshape the Matrix | 5/5 | 5/5 |
+| **Total** | **47/47** | **47/47** |
+
+Batch 0028 total: 94 checks passed, 0 failed. Tests cover bracket construction, disconnected and connected graphs, attendance violations, one/two/many-number division formatting, word reversal, N-ary and binary trees, prefix-sum counts including negative values, sorted pair minima, and valid/invalid matrix reshapes. A few expected values in the local harness were corrected during test development (Array Partition and Binary Tree Tilt); the final runs passed. JSONL validation confirmed 10 problem records, 20 solution records, 20 Q&A records, and aligned problem IDs. All 20 solution records now contain executed local check counts; statuses remain pending official/independent evaluation.
