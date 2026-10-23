@@ -715,7 +715,7 @@ Environment: CPython 3.13.5 and javac/java 21.0.12.1. Exact Python and Java snip
 
 Batch 0037 total: 148 assertions passed, 0 failed. Coverage includes odd/even linked-list lengths, projection totals, uncommon-word sets, candy-swap sum equality, monotonicity in both directions, increasing-order tree shape, parity partitioning, range shrinkage, card-frequency GCDs, and letter-only reversal around punctuation. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Solution status reflects local testing only, not official LeetCode acceptance.
 
-Cumulative recorded local checks through Batch 0037: 3,511 passed, 0 failed.
+Cumulative recorded local checks through Batch 0037: 3,363 passed, 0 failed.
 
 ## Batch 0038 local verification — 2026-10-23
 
@@ -737,7 +737,7 @@ Environment: CPython 3.13.5 and javac/java 21.0.12.1. The exact Python and Java 
 
 Batch 0038 total: 110 assertions passed, 0 failed. Coverage includes long-press repetition, email normalization, the inclusive 3000ms recent-call window, letter/digit log ordering and stable digit logs, BST range pruning, strict mountain peaks, column-order violations, alien-order prefix handling, repeated-value detection, and univalued tree checks. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification does not mean official LeetCode acceptance.
 
-Cumulative recorded local checks through Batch 0038: 3,621 passed, 0 failed.
+Cumulative recorded local checks through Batch 0038: 3,473 passed, 0 failed.
 
 ## Batch 0039 local verification — 2026-10-23
 
@@ -759,7 +759,7 @@ Environment: CPython 3.13.5 and javac/java 21.0.12.1. Both languages were run lo
 
 Batch 0039 total: 122 assertions passed, 0 failed. Local tests caught two defects before pushing: the #1009 complement mask needed to stop when it reaches the number’s bit width, and the Python #1013 greedy split had to leave at least one element for the third nonempty part. Both fixes were rerun with the full suite. Post-push JSONL validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification is not official LeetCode acceptance.
 
-Cumulative recorded local checks through Batch 0039: 3,743 passed, 0 failed.
+Cumulative recorded local checks through Batch 0039: 3,595 passed, 0 failed.
 
 ## Batch 0040 local verification — 2026-10-23
 
@@ -781,7 +781,7 @@ Environment: CPython 3.13.5 and javac/java 21.0.12.1. Both language harnesses ex
 
 Batch 0040 total: 110 assertions passed, 0 failed. Coverage includes nested primitive parentheses, root-to-leaf binary values, divisor-game parity, Manhattan distance tie ordering, collinearity, heap edge cases, cascading adjacent duplicates, sorted-height comparisons, string GCD compatibility, and zeros at array boundaries. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification does not mean official LeetCode acceptance.
 
-Cumulative recorded local checks through Batch 0040: 3,853 passed, 0 failed.
+Cumulative recorded local checks through Batch 0040: 3,705 passed, 0 failed.
 
 ## Batch 0041 local verification — 2026-10-23
 
@@ -803,7 +803,7 @@ Environment: CPython 3.13.5 and javac/java 21.0.12.1. Both language suites ran l
 
 Batch 0041 total: 110 assertions passed, 0 failed. Coverage includes address replacement, relative sort priority and leftovers, reversed domino equivalence, Tribonacci base cases, Gregorian leap-year rules, character-frequency limits, strictly-greater frequency queries, circular route direction, weekday boundaries, and multiple minimum-difference pairs. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification does not mean official LeetCode acceptance.
 
-Cumulative recorded local checks through Batch 0041: 3,963 passed, 0 failed.
+Cumulative recorded local checks through Batch 0041: 3,815 passed, 0 failed.
 
 ## Batch 0042 local verification — 2026-10-23
 
@@ -825,7 +825,7 @@ Environment: CPython 3.13.5 and javac/java 21.0.12.1. Both language suites execu
 
 Batch 0042 total: 114 assertions passed, 0 failed. Coverage includes duplicate frequency counts, chip parity, balanced-string segmentation, collinear points, row/column increments, grid shifts across wrap boundaries, diagonal point movement, tic-tac-toe wins/draw/pending states, digit product-minus-sum including zero digits, and decimal digit parity. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification does not mean official LeetCode acceptance.
 
-Cumulative recorded local checks through Batch 0042: 4,077 passed, 0 failed.
+Cumulative recorded local checks through Batch 0042: 3,929 passed, 0 failed.
 
 ## Batch 0043 local verification — 2026-10-23
 
@@ -847,7 +847,7 @@ Environment: CPython 3.13.5 and javac/java 21.0.12.1. The exact Python and Java 
 
 Batch 0043 total: 144 assertions passed, 0 failed. Coverage includes distinct zero-sum outputs, run-length expansion including zero frequencies, leftmost digit replacement, rank ties, parity step counts, negative matrix entries, duplicate ranks, ascending/descending character sweeps, row-minimum/column-maximum intersections, and repeated insertion indices. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification is not official LeetCode acceptance.
 
-Cumulative recorded local checks through Batch 0043: 4,221 passed, 0 failed.
+Cumulative recorded local checks through Batch 0043: 4,073 passed, 0 failed.
 
 ## Batch 0044 local verification — 2026-10-23
 
@@ -869,5 +869,29 @@ Environment: CPython 3.13.5 and javac/java 21.0.12.1. All ten Java solutions com
 
 Batch 0044 total: 118 assertions passed, 0 failed. Coverage includes lucky-frequency selection, minimum strict-majority subsequences, candy thresholds, destination detection, stack operation sequences, inclusive time intervals, multiset equality, array interleaving, next-smaller-or-equal discounts, and prefix accumulation. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification is not official LeetCode acceptance.
 
-Cumulative recorded local checks through Batch 0044: 4,339 passed, 0 failed.
+Cumulative recorded local checks through Batch 0044: 4,191 passed, 0 failed.
+
+## Batch 0045 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. The Python and Java snippets were executed locally; all ten Java solutions compiled.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 1491 Average Salary Excluding the Minimum and Maximum Salary | 5/5 | 5/5 |
+| 1496 Path Crossing | 6/6 | 6/6 |
+| 1502 Can Make Arithmetic Progression From Sequence | 6/6 | 6/6 |
+| 1512 Number of Good Pairs | 6/6 | 6/6 |
+| 1528 Shuffle String | 5/5 | 5/5 |
+| 1534 Count Good Triplets | 6/6 | 6/6 |
+| 1572 Matrix Diagonal Sum | 6/6 | 6/6 |
+| 1582 Special Positions in a Binary Matrix | 6/6 | 6/6 |
+| 1603 Design Parking System | 6/6 | 6/6 |
+| 1614 Maximum Nesting Depth of the Parentheses | 6/6 | 6/6 |
+| **Total** | **58/58** | **58/58** |
+
+Batch 0045 total: 116 assertions passed, 0 failed. Coverage includes average calculation excluding extrema, path revisits, arithmetic progression, duplicate pair counts, character-position reconstruction, triplet constraints, odd/even matrix diagonals, row/column uniqueness, parking capacity exhaustion, and parenthesis depth. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs.
+
+## Batch target completion
+
+Batch 0045 has been locally tested and pushed. The cumulative assertion count was recalculated across the recorded batch totals; earlier cumulative figures from Batch 0037 onward were overstated by 148 because Batch 0037's 148 assertions had been added twice. Correct cumulative count through Batch 0045: **4,307 passed, 0 failed**. This is local verification, not official LeetCode acceptance.
 
