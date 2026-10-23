@@ -761,3 +761,25 @@ Batch 0039 total: 122 assertions passed, 0 failed. Local tests caught two defect
 
 Cumulative recorded local checks through Batch 0039: 3,743 passed, 0 failed.
 
+## Batch 0040 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. Both language harnesses executed the exact batch solution snippets; all ten Java solutions compiled.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 1021 Remove Outermost Parentheses | 5/5 | 5/5 |
+| 1022 Sum of Root To Leaf Binary Numbers | 5/5 | 5/5 |
+| 1025 Divisor Game | 6/6 | 6/6 |
+| 1030 Matrix Cells in Distance Order | 4/4 | 4/4 |
+| 1037 Valid Boomerang | 5/5 | 5/5 |
+| 1046 Last Stone Weight | 6/6 | 6/6 |
+| 1047 Remove All Adjacent Duplicates In String | 6/6 | 6/6 |
+| 1051 Height Checker | 6/6 | 6/6 |
+| 1071 Greatest Common Divisor of Strings | 6/6 | 6/6 |
+| 1089 Duplicate Zeros | 6/6 | 6/6 |
+| **Total** | **55/55** | **55/55** |
+
+Batch 0040 total: 110 assertions passed, 0 failed. Coverage includes nested primitive parentheses, root-to-leaf binary values, divisor-game parity, Manhattan distance tie ordering, collinearity, heap edge cases, cascading adjacent duplicates, sorted-height comparisons, string GCD compatibility, and zeros at array boundaries. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification does not mean official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0040: 3,853 passed, 0 failed.
+
