@@ -827,3 +827,25 @@ Batch 0042 total: 114 assertions passed, 0 failed. Tests cover duplicate frequen
 
 Cumulative recorded local checks through Batch 0042: 4,083 passed, 0 failed.
 
+## Batch 0043 independent local verification — 2026-10-23
+
+The Batch 0043 records were already present remotely when resumed, so their implementations were independently tested locally before updating verification metadata. Environment: CPython 3.13.5 and javac/java 21.0.12.1. All Java code compiled. Each language passed 72 test cases. The harness ran 126 Python assertions and 108 Java assertions because the sum-to-zero cases check array length, sum, and uniqueness separately.
+
+| Problem | Python 3 cases | Java 21 cases |
+|---|---:|---:|
+| 1304 Find N Unique Integers Sum up to Zero | 18/18 | 18/18 |
+| 1313 Decompress Run-Length Encoded List | 6/6 | 6/6 |
+| 1323 Maximum 69 Number | 6/6 | 6/6 |
+| 1331 Rank Transform of an Array | 6/6 | 6/6 |
+| 1342 Number of Steps to Reduce a Number to Zero | 6/6 | 6/6 |
+| 1351 Count Negative Numbers in a Sorted Matrix | 6/6 | 6/6 |
+| 1365 How Many Numbers Are Smaller Than the Current Number | 6/6 | 6/6 |
+| 1370 Increasing Decreasing String | 6/6 | 6/6 |
+| 1380 Lucky Numbers in a Matrix | 6/6 | 6/6 |
+| 1389 Create Target Array in the Given Order | 6/6 | 6/6 |
+| **Total** | **72/72** | **72/72** |
+
+Batch 0043 total: 144 test cases passed, 0 failed. Coverage includes zero-sum uniqueness, run-length expansion, first eligible digit replacement, duplicate-aware ranks, integer reduction, negative matrix values, duplicate ranks, alternating character-frequency sweeps, row-minimum/column-maximum intersections, and indexed insertion. JSONL counts, unique language-specific keys, and problem alignment were checked. Local testing does not imply official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0043: 4,227 passed, 0 failed.
+
