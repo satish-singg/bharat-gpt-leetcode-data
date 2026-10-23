@@ -1005,3 +1005,25 @@ Batch 0050: 120 assertions passed, 0 failed. Coverage includes strict numeric or
 
 Five batches were completed sequentially. Each batch had 60 Python assertions and 60 Java 21 assertions run locally before push, for 300 Python and 300 Java checks across these five batches. All 50 Java solutions compiled. No failures remained in the final runs. The cumulative tracker preserves the previously recorded baseline and adds 600 new local checks; older historical totals have not been independently rerun. Local tests do not constitute official LeetCode acceptance.
 
+## Batch 0051 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and OpenJDK 21.0.12.1. Each of the ten Python solutions was executed against six local cases (60/60 passed). Each Java 21 solution compiled with `javac` and passed six cases (60/60 passed).
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 2124 Check if All A's Appears Before All B's | 6/6 | 6/6 |
+| 2133 Check if Every Row and Column Contains All Numbers | 6/6 | 6/6 |
+| 2144 Minimum Cost of Buying Candies With Discount | 6/6 | 6/6 |
+| 2160 Minimum Sum of Four Digit Number After Splitting Digits | 6/6 | 6/6 |
+| 2169 Count Operations to Obtain Zero | 6/6 | 6/6 |
+| 2176 Count Equal and Divisible Pairs in an Array | 6/6 | 6/6 |
+| 2180 Count Integers With Even Digit Sum | 6/6 | 6/6 |
+| 2185 Counting Words With a Given Prefix | 6/6 | 6/6 |
+| 2194 Cells in a Range on an Excel Sheet | 6/6 | 6/6 |
+| 2200 Find All K-Distant Indices in an Array | 6/6 | 6/6 |
+| **Total** | **60/60** | **60/60** |
+
+Batch 0051 total: 120 assertions passed, 0 failed. Local test development caught and corrected inaccurate expected values in the candy-discount, subtraction-count, equal-index-pair, and k-distant-index test cases before the batch was pushed. The solution code passed the full rerun. Post-push checks confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, self-check values, and problem/solution/Q&A alignment.
+
+The cumulative progress figure carries the previously recorded baseline and adds 120 checks for Batch 0051; the older historical baseline has not been independently rerun. Local testing does not constitute official LeetCode acceptance.
+
