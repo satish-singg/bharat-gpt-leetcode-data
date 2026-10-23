@@ -1,16 +1,16 @@
 {
-  "last_batch": 28,
-  "last_problem_number": 566,
-  "problems_done": 360,
+  "last_batch": 29,
+  "last_problem_number": 605,
+  "problems_done": 370,
   "records": {
-    "problems": 360,
-    "solutions": 720,
-    "qa": 722,
-    "tested_solution_records": 720
+    "problems": 370,
+    "solutions": 740,
+    "qa": 742,
+    "tested_solution_records": 740
   },
   "skipped": 16,
-  "notes": "Progress through Batch 0028. Batches 0025-0028: 80 Python 3/Java 21 solution records locally tested; Batch 0025 102 checks, Batch 0026 106, Batch 0027 100, Batch 0028 94; total cumulative checks 2,317 passed and 0 failed. All Java snippets in these four batches compiled. Batch 0027 Java problem 530 resets traversal state on each public call. Batch 0028 JSONL counts and problem IDs validated (10 problems, 20 solutions, 20 Q&A). All solutions remain pending official/independent evaluation; local checks are not official acceptance. Premium-locked questions remain excluded.",
-  "local_test_cases_passed": 2317,
+  "notes": "Dataset files are present through Batch 0029 (problems through #605). Batches 0025-0029 have all 100 Python 3/Java 21 solution records locally exercised: Batch 0025 passed 102 checks, Batch 0026 106, Batch 0027 100, Batch 0028 94, and Batch 0029 102; 0 failures. All Java snippets in these five batches compiled. Batch 0027 Java problem 530 resets traversal state on each call. Batch 0029 problem 605 handles n=0 in both languages. Batch 0029 JSONL validated with 10 problems, 20 solutions, 20 Q&A records and aligned IDs. All solution statuses remain pending independent/official evaluation; local checks are not official acceptance. Premium-locked questions remain excluded.",
+  "local_test_cases_passed": 2419,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
