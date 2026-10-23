@@ -387,3 +387,13 @@ Date: 2026-10-23 (UTC)
 - Java 21: compiled successfully; 7/7 local assertions passed: the same five values plus Integer.MIN_VALUE and Integer.MAX_VALUE.
 - Both solution records in `data/solutions/batch_0025.jsonl` now have `self_check.ran=true` and the executed case counts. Status remains `pending` because local execution does not establish official LeetCode acceptance.
 - This is a targeted check only; it does not mean Batch 0025 or the overall task is complete.
+
+## Targeted verification — Batch 0025, problem 491 (Non-decreasing Subsequences)
+
+Date: 2026-10-23 (UTC)
+
+- Environment: CPython 3.13.5; javac/java 21.0.12.1.
+- Python 3: 6/6 local cases passed.
+- Java 21: compiled successfully; 6/6 local cases passed.
+- Coverage: the statement example `[4,6,7,7]`, descending/duplicate-heavy input, empty input, a strictly increasing input, all-equal values, and negative values with duplicates. Outputs were compared as sets of subsequences so result ordering is not assumed.
+- Both solution records for problem 491 in `data/solutions/batch_0025.jsonl` now record the executed checks. Status remains `pending`; these are local tests, not official LeetCode acceptance.
