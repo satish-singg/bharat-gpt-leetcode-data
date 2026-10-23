@@ -651,3 +651,25 @@ Batch 0034 total: 118 assertions passed, 0 failed. Coverage includes digit divis
 
 Cumulative recorded local checks through Batch 0034: 2,994 passed, 0 failed.
 
+## Batch 0035 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. Both language test harnesses executed the batch solution snippets locally; all Java snippets compiled.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 788 Rotated Digits | 6/6 | 6/6 |
+| 796 Rotate String | 6/6 | 6/6 |
+| 804 Unique Morse Code Words | 6/6 | 6/6 |
+| 806 Number of Lines To Write String | 6/6 | 6/6 |
+| 811 Subdomain Visit Count | 5/5 | 5/5 |
+| 819 Most Common Word | 5/5 | 5/5 |
+| 821 Shortest Distance to a Character | 5/5 | 5/5 |
+| 824 Goat Latin | 5/5 | 5/5 |
+| 830 Positions of Large Groups | 6/6 | 5/5 |
+| 832 Flipping an Image | 6/6 | 6/6 |
+| **Total** | **56/56** | **55/55** |
+
+Batch 0035 total: 111 assertions passed, 0 failed. Coverage includes rotation-valid digits, string rotations, Morse collisions, line-width boundaries, subdomain aggregation, punctuation and banned-word handling, nearest-character distances, Goat Latin vowel/consonant rules, maximal repeated-character runs, and matrix row flipping/inversion. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. All solution records are marked verified for local testing only, not official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0035: 3,105 passed, 0 failed.
+
