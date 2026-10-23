@@ -849,3 +849,25 @@ Batch 0043 total: 144 assertions passed, 0 failed. Coverage includes distinct ze
 
 Cumulative recorded local checks through Batch 0043: 4,221 passed, 0 failed.
 
+## Batch 0044 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. All ten Java solutions compiled and both language harnesses passed.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 1394 Find Lucky Integer in an Array | 6/6 | 6/6 |
+| 1403 Minimum Subsequence in Non-Increasing Order | 6/6 | 6/6 |
+| 1431 Kids With the Greatest Number of Candies | 6/6 | 6/6 |
+| 1436 Destination City | 5/5 | 5/5 |
+| 1441 Build an Array With Stack Operations | 6/6 | 6/6 |
+| 1450 Number of Students Doing Homework at a Given Time | 6/6 | 6/6 |
+| 1460 Make Two Arrays Equal by Reversing Subarrays | 6/6 | 6/6 |
+| 1470 Shuffle the Array | 6/6 | 6/6 |
+| 1475 Final Prices With a Special Discount in a Shop | 6/6 | 6/6 |
+| 1480 Running Sum of 1d Array | 6/6 | 6/6 |
+| **Total** | **59/59** | **59/59** |
+
+Batch 0044 total: 118 assertions passed, 0 failed. Coverage includes lucky-frequency selection, minimum strict-majority subsequences, candy thresholds, destination detection, stack operation sequences, inclusive time intervals, multiset equality, array interleaving, next-smaller-or-equal discounts, and prefix accumulation. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification is not official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0044: 4,339 passed, 0 failed.
+
