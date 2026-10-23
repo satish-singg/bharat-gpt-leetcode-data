@@ -1155,3 +1155,78 @@ Cumulative tracker after Batch 0055: **5,499 recorded checks passed, 0 failed**.
 - Cumulative tracker after Batch 0055: 5,499 recorded checks passed, 0 failed. This includes the existing historical baseline plus checks recorded for subsequent batches; the entire historical suite was not rerun in this batch.
 - These are local checks, not official LeetCode acceptance results.
 
+# Batch 0056 local verification — 2026-10-23
+
+## Environment
+- Python: CPython 3.13.5
+- Java compiler/runtime: `javac --release 21` / Java 21.0.12.1
+- Each Java problem implementation compiled and ran locally before the solution records were added.
+
+## Results
+| Problem | Python 3 | Java 21 | Result |
+|---|---:|---:|---|
+| 2437. Number of Valid Clock Times | 6/6 | 6/6 | PASS |
+| 2441. Largest Positive Integer That Exists With Its Negative | 4/4 | 4/4 | PASS |
+| 2446. Determine if Two Events Have Conflict | 4/4 | 4/4 | PASS |
+| 2451. Odd String Difference | 3/3 | 3/3 | PASS |
+| 2460. Apply Operations to an Array | 3/3 | 3/3 | PASS |
+| 2465. Number of Distinct Averages | 2/2 | 2/2 | PASS |
+| 2475. Number of Unequal Triplets in Array | 2/2 | 2/2 | PASS |
+| 2481. Minimum Cuts to Divide a Circle | 5/5 | 5/5 | PASS |
+| 2485. Find the Pivot Integer | 4/4 | 4/4 | PASS |
+| 2490. Circular Sentence | 4/4 | 4/4 | PASS |
+| **Batch 0056 total** | **37/37** | **37/37** | **PASS** |
+
+- Total test cases passed: 74; failed: 0.
+- All 10 Java solutions compiled with `javac --release 21`.
+
+# Batch 0057 local verification — 2026-10-23
+
+## Results
+| Problem | Python 3 | Java 21 | Result |
+|---|---:|---:|---|
+| 2496. Maximum Value of a String | 3/3 | 3/3 | PASS |
+| 2500. Delete Greatest Value in Each Row | 2/2 | 2/2 | PASS |
+| 2506. Count Pairs Of Similar Strings | 2/2 | 2/2 | PASS |
+| 2511. Maximum Enemy Forts That Can Be Captured | 3/3 | 3/3 | PASS |
+| 2520. Count the Digits That Divide a Number | 3/3 | 3/3 | PASS |
+| 2529. Maximum Count of Positive Integer and Negative Integer | 3/3 | 3/3 | PASS |
+| 2535. Difference Between Element Sum and Digit Sum of an Array | 2/2 | 2/2 | PASS |
+| 2540. Minimum Common Value | 2/2 | 2/2 | PASS |
+| 2544. Alternating Digit Sum | 4/4 | 4/4 | PASS |
+| 2553. Separate the Digits in an Array | 2/2 | 2/2 | PASS |
+| **Batch 0057 total** | **26/26** | **26/26** | **PASS** |
+
+- Total test cases passed: 52; failed: 0.
+- All 10 Java solutions compiled with `javac --release 21`. The Java similar-pairs harness emitted an unchecked generic-array warning; compilation and tests succeeded.
+
+# Batch 0058 local verification — 2026-10-23
+
+## Results
+| Problem | Python 3 | Java 21 | Result |
+|---|---:|---:|---|
+| 2558. Take Gifts From the Richest Pile | 2/2 | 2/2 | PASS |
+| 2562. Find the Array Concatenation Value | 3/3 | 3/3 | PASS |
+| 2570. Merge Two 2D Arrays by Summing Values | 1/1 | 1/1 | PASS |
+| 2574. Left and Right Sum Differences | 2/2 | 2/2 | PASS |
+| 2582. Pass the Pillow | 4/4 | 4/4 | PASS |
+| 2591. Distribute Money to Maximum Children | 6/6 | 6/6 | PASS |
+| 2600. K Items With the Maximum Sum | 3/3 | 3/3 | PASS |
+| 2605. Form Smallest Number From Two Digit Arrays | 3/3 | 3/3 | PASS |
+| 2610. Convert an Array Into a 2D Array With Conditions | 2/2 | 2/2 | PASS |
+| 2614. Prime In Diagonal | 3/3 | 3/3 | PASS |
+| **Batch 0058 total** | **29/29** | **29/29** | **PASS** |
+
+- Total test cases passed: 58; failed: 0.
+- All 10 Java solutions compiled with `javac --release 21`.
+
+## Combined verification for Batches 0056–0058
+- Problem records added: 30.
+- Solution records added and locally tested: 60 (30 Python 3, 30 Java 21).
+- Q&A records added: 60.
+- Test cases passed: 184/184 across both languages.
+- Java compilation: 30/30 solutions successful.
+- Post-push JSONL validation: each batch has 10 problem records, 20 solution records, and 20 Q&A records; all lines parse as JSON; problem IDs and language keys are unique within each batch; solution/Q&A IDs align; all solution self-check counts match.
+- Cumulative tracker after Batch 0058: 5,683 recorded checks passed and 0 recorded failures. This includes historical baseline data; the entire historical suite was not rerun.
+- These are local test results, not official LeetCode acceptance results.
+
