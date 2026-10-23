@@ -1,16 +1,16 @@
 {
-  "last_batch": 37,
-  "last_problem_number": 917,
-  "problems_done": 460,
+  "last_batch": 38,
+  "last_problem_number": 965,
+  "problems_done": 470,
   "records": {
-    "problems": 460,
-    "solutions": 920,
-    "qa": 922,
-    "tested_solution_records": 920
+    "problems": 470,
+    "solutions": 940,
+    "qa": 942,
+    "tested_solution_records": 940
   },
   "skipped": 16,
-  "notes": "Progress through Batch 0037 (highest problem #917). Batches 0025–0037 have all 260 Python 3/Java 21 solution records locally tested and marked verified. Batch 0037 passed 80 Python assertions and 68 Java assertions (148 total); all ten Java solutions compiled under Java 21. Cumulative local checks: 3,511 passed, 0 failed. Batch 0037 JSONL counts, unique keys, and problem/solution/Q&A alignment passed after push. Local verification is not official LeetCode acceptance. Premium-locked and SQL-only questions remain excluded.",
-  "local_test_cases_passed": 3511,
+  "notes": "Progress through Batch 0038 (highest problem #965). Batches 0025–0038 have all 280 Python 3/Java 21 solution records locally tested and marked verified. Batch 0038 passed 55 Python assertions and 55 Java assertions (110 total); all Java solutions compiled under Java 21. Cumulative local checks: 3,621 passed, 0 failed. Batch 0038 JSONL counts, unique keys, and problem/solution/Q&A alignment passed after push. Local verification is not official LeetCode acceptance. Premium-locked and SQL-only questions remain excluded.",
+  "local_test_cases_passed": 3621,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
