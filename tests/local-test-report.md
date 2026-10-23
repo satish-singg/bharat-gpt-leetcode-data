@@ -377,3 +377,13 @@ A first Python test expectation was corrected: target 4 with [1,1,1,1] has a val
 - Total: 52 passed, 0 failed.
 - JSONL verified after fetching from GitHub: 10 problem records, 20 solution records, 20 Q&A records.
 - Local checks are not official LeetCode submissions; solution statuses remain pending.
+
+## Targeted verification — Batch 0025, problem 504 (Base 7)
+
+Date: 2026-10-23 (UTC)
+
+- Environment: CPython 3.13.5; javac/java 21.0.12.1.
+- Python 3: 5/5 local assertions passed: 100, -7, 0, -1000, and 49.
+- Java 21: compiled successfully; 7/7 local assertions passed: the same five values plus Integer.MIN_VALUE and Integer.MAX_VALUE.
+- Both solution records in `data/solutions/batch_0025.jsonl` now have `self_check.ran=true` and the executed case counts. Status remains `pending` because local execution does not establish official LeetCode acceptance.
+- This is a targeted check only; it does not mean Batch 0025 or the overall task is complete.
