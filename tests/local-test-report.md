@@ -305,3 +305,11 @@ A first Python test expectation was corrected: target 4 with [1,1,1,1] has a val
 - Total: 58 passed, 0 failed.
 - JSONL verified after fetching from GitHub: 10 problem records, 20 solution records, 20 Q&A records.
 - Local checks are not official LeetCode submissions; solution statuses remain pending.
+
+## Batch 0016 — 2026-10-23
+- Problems: 337, 338, 341, 342, 343, 344, 345, 347, 349, 350.
+- Python 3 spot tests: 24 passed, 0 failed.
+- Java 21 spot tests: 22 passed, 0 failed; compiled with javac 21.0.12.1.
+- Total: 46 passed, 0 failed.
+- JSONL verified after fetching from GitHub: 10 problem records, 20 solution records, 20 Q&A records.
+- Local checks are not official LeetCode submissions; solution statuses remain pending.
