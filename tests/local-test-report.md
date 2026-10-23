@@ -427,3 +427,11 @@ Environment: CPython 3.13.5 and javac/java 21.0.12.1. Java harnesses compiled su
 | **Total** | **10/10** | **10/10** | **20/20 PASS** |
 
 Coverage included a duplicate mode, tied modes, a single-node tree, multiple unique subtree sums, repeated subtree sums, and all-zero trees. Output order was normalized where the problem permits any order. The corresponding four solution records now record their local checks; status remains `pending`, not official acceptance.
+
+## Batch 0025 summary — 2026-10-23
+
+- 10 problem records, 20 solution records, and 20 Q&A records; JSONL parsed and IDs aligned.
+- Python 3 and Java 21 local checks for the 20 solutions: 102 passed, 0 failed. All Java snippets compiled.
+- Cumulative local checks recorded in progress.json: 2,017 passed, 0 failed.
+- Batch 0026 and 0027 files exist but their solution code remains untested and pending. Batch 0028 is not yet present.
+- Local checks are not official LeetCode results. Solution statuses remain pending independent evaluation.
