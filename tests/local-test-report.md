@@ -673,3 +673,25 @@ Batch 0035 total: 111 assertions passed, 0 failed. Coverage includes rotation-va
 
 Cumulative recorded local checks through Batch 0035: 3,105 passed, 0 failed.
 
+## Batch 0036 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. Both language harnesses executed the batch solution snippets locally; all ten Java solutions compiled, including the tree and matrix implementations.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 836 Rectangle Overlap | 5/5 | 5/5 |
+| 840 Magic Squares In Grid | 5/5 | 5/5 |
+| 844 Backspace String Compare | 6/6 | 6/6 |
+| 849 Maximize Distance to Closest Person | 6/6 | 6/6 |
+| 852 Peak Index in a Mountain Array | 5/5 | 5/5 |
+| 859 Buddy Strings | 6/6 | 6/6 |
+| 860 Lemonade Change | 6/6 | 6/6 |
+| 867 Transpose Matrix | 5/5 | 5/5 |
+| 868 Binary Gap | 6/6 | 6/6 |
+| 872 Leaf-Similar Trees | 5/5 | 5/5 |
+| **Total** | **55/55** | **55/55** |
+
+Batch 0036 total: 110 assertions passed, 0 failed. Coverage includes strict rectangle overlap versus touching edges, valid and invalid magic squares, empty effective strings after backspaces, seat gaps at edges and between people, mountain peaks, buddy-string duplicates and swaps, greedy change selection, rectangular matrix transposes, bit-position gaps, and left-to-right leaf sequences. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Solution records are verified for local testing only, not official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0036: 3,215 passed, 0 failed.
+
