@@ -915,3 +915,25 @@ Batch 0046: 120 local assertions passed, 0 failed. All ten Java snippets compile
 
 Cumulative tracker figures retain the prior recorded baseline and add the 120 checks run for this batch; the historical baseline has not been independently rerun in this session. Local tests do not constitute official LeetCode acceptance.
 
+## Batch 0047 local verification — 2026-10-23
+
+Environment: Python 3 and OpenJDK 21.0.12.1. Each Python snippet passed six local tests (60/60); each Java solution compiled and passed six tests (60/60).
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 1748 Sum of Unique Elements | 6/6 | 6/6 |
+| 1752 Check if Array Is Sorted and Rotated | 6/6 | 6/6 |
+| 1768 Merge Strings Alternately | 6/6 | 6/6 |
+| 1773 Count Items Matching a Rule | 6/6 | 6/6 |
+| 1779 Find Nearest Point That Has Same X or Y Coordinate | 6/6 | 6/6 |
+| 1812 Determine Color of a Chessboard Square | 6/6 | 6/6 |
+| 1822 Sign of the Product of an Array | 6/6 | 6/6 |
+| 1832 Check if the Sentence Is Pangram | 6/6 | 6/6 |
+| 1837 Sum of Digits in Base K | 6/6 | 6/6 |
+| 1844 Replace All Digits with Characters | 6/6 | 6/6 |
+| **Total** | **60/60** | **60/60** |
+
+Batch 0047: 120 assertions passed, 0 failed. Local tests caught and corrected the chessboard square parity implementation before push. Coverage includes duplicates, circular sortedness, unequal string lengths, all rule keys, nearest-point ties and no valid point, chessboard colors, zero/negative product signs, pangrams, base conversion, and character shifts. Post-push JSONL validation confirmed record counts, unique language keys, verified self-check fields, and problem/Q&A alignment.
+
+The cumulative tracker carries its prior baseline and adds the local checks for Batches 0046 and 0047; historical cumulative totals have not been independently rerun. Local tests do not constitute official LeetCode acceptance.
+
