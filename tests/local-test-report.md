@@ -528,3 +528,23 @@ This section supersedes stale status/count wording in earlier sections above.
 - All 80 solution records in batches 0025–0028 are marked verified because their recorded local test suites passed.
 - Batch 0029: the earlier section records 102/102 checks and successful Java compilation, but its solution statuses remain pending until the audit is completed.
 - Cumulative local checks through Batch 0029: 2,421 passed, 0 failed. Local verification is not official LeetCode acceptance.
+
+## Batch 0030 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. All ten Java solution snippets compiled and ran.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 606 Construct String from Binary Tree | 5/5 | 5/5 |
+| 609 Find Duplicate File in System | 5/5 | 5/5 |
+| 611 Valid Triangle Number | 5/5 | 5/5 |
+| 617 Merge Two Binary Trees | 5/5 | 5/5 |
+| 621 Task Scheduler | 5/5 | 5/5 |
+| 623 Add One Row to Tree | 5/5 | 5/5 |
+| 628 Maximum Product of Three Numbers | 5/5 | 5/5 |
+| 637 Average of Levels in Binary Tree | 5/5 | 5/5 |
+| 643 Maximum Average Subarray I | 5/5 | 5/5 |
+| 645 Set Mismatch | 5/5 | 5/5 |
+| **Total** | **50/50** | **50/50** |
+
+Batch 0030 total: 100 checks passed, 0 failed. Coverage includes binary-tree serialization and merging, duplicate-content grouping, triangle counts with repeated and zero values, task cooldowns, row insertion at several depths, negative-product cases, level averages, fixed windows, and duplicate/missing numbers. JSONL validation confirmed 10 problem records, 20 solution records, 20 Q&A records, and aligned IDs. All 20 solution records have executed local check counts; statuses remain pending independent/official evaluation.
