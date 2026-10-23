@@ -1049,3 +1049,29 @@ Batch 0052 total: 94 assertions passed, 0 failed. Coverage includes even/odd fre
 
 Cumulative tracker after Batch 0052: 5,275 recorded checks passed, 0 failed. Earlier historical checks were not rerun during this batch.
 
+
+## Batch 0053 local verification — 2026-10-23
+
+### Environment and commands
+- Python: CPython 3.13.5; ran the Python solution implementations through a local assertion harness.
+- Java: compiled the ten Java solutions with `javac --release 21`, then ran the Java assertion harness on Java 21.
+- This is local verification, not official LeetCode acceptance.
+
+### Results
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 2264 Largest 3-Same-Digit Number in String | 5/5 PASS | 5/5 PASS |
+| 2265 Count Nodes Equal to Average of Subtree | 4/4 PASS | 4/4 PASS |
+| 2273 Find Resultant Array After Removing Anagrams | 4/4 PASS | 4/4 PASS |
+| 2278 Percentage of Letter in String | 4/4 PASS | 4/4 PASS |
+| 2283 Check if Number Has Equal Digit Count and Digit Value | 4/4 PASS | 4/4 PASS |
+| 2287 Rearrange Characters to Make Target String | 4/4 PASS | 4/4 PASS |
+| 2288 Apply Discount to Prices | 4/4 PASS | 4/4 PASS |
+| 2293 Min Max Game | 4/4 PASS | 4/4 PASS |
+| 2303 Calculate Amount Paid in Taxes | 4/4 PASS | 4/4 PASS |
+| 2309 Greatest English Letter in Upper and Lower Case | 4/4 PASS | 4/4 PASS |
+| **Total** | **41/41 PASS** | **41/41 PASS** |
+
+Batch 0053 total: **82 assertions passed, 0 failed**. All ten Java solutions compiled successfully with `--release 21`. Coverage included digit windows, subtree averages, anagram signatures, percentage counting, digit frequencies, character inventory ratios, valid-price token parsing and discount formatting, min/max rounds, progressive tax brackets, and upper/lowercase letter matching. Post-push JSONL validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique problem and language keys, all 20 solution records marked verified with passed self-check counts, and aligned problem IDs. The cumulative tracker carries forward earlier recorded checks; earlier batches were not rerun as part of this verification.
+
+Cumulative tracker after Batch 0053: **5,357 recorded checks passed, 0 failed**. Earlier historical checks were not rerun during this batch.
