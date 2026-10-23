@@ -455,3 +455,23 @@ Environment: CPython 3.13.5 and Java 21. All ten Java solution snippets compiled
 | **Total** | **53/53** | **53/53** |
 
 Batch 0026 total: 106 checks passed, 0 failed. All 20 solution records record the executed checks. Status remains pending; local tests are not official judge acceptance.
+
+## Batch 0027 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. All ten Java solution snippets compiled and ran.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 530 Minimum Absolute Difference in BST | 5/5 | 5/5 |
+| 532 K-diff Pairs in an Array | 5/5 | 5/5 |
+| 535 Encode and Decode TinyURL | 5/5 | 5/5 |
+| 537 Complex Number Multiplication | 5/5 | 5/5 |
+| 538 Convert BST to Greater Tree | 5/5 | 5/5 |
+| 539 Minimum Time Difference | 5/5 | 5/5 |
+| 540 Single Element in a Sorted Array | 5/5 | 5/5 |
+| 541 Reverse String II | 5/5 | 5/5 |
+| 542 01 Matrix | 5/5 | 5/5 |
+| 543 Diameter of Binary Tree | 5/5 | 5/5 |
+| **Total** | **50/50** | **50/50** |
+
+Batch 0027 total: 100 checks passed, 0 failed. The Java solution for problem 530 was improved to reset traversal state on each public call after a repeated-call harness exposed stale instance state. The corrected version passed. A Reverse String II test expectation was corrected to match the specified alternating 2k chunks; all cases then passed. All 20 solution records now have actual local check counts; statuses remain pending independent/official evaluation.
