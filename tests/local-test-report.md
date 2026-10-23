@@ -805,3 +805,25 @@ Batch 0041 total: 110 assertions passed, 0 failed. Coverage includes address rep
 
 Cumulative recorded local checks through Batch 0041: 3,963 passed, 0 failed.
 
+## Batch 0042 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. Both language suites executed the exact solution snippets locally; all ten Java solutions compiled.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 1207 Unique Number of Occurrences | 6/6 | 6/6 |
+| 1217 Minimum Cost to Move Chips to The Same Position | 6/6 | 6/6 |
+| 1221 Split a String in Balanced Strings | 6/6 | 6/6 |
+| 1232 Check If It Is a Straight Line | 6/6 | 6/6 |
+| 1252 Cells with Odd Values in a Matrix | 6/6 | 6/6 |
+| 1260 Shift 2D Grid | 5/5 | 5/5 |
+| 1266 Minimum Time Visiting All Points | 5/5 | 5/5 |
+| 1275 Find Winner on a Tic Tac Toe Game | 5/5 | 5/5 |
+| 1281 Subtract the Product and Sum of Digits of an Integer | 6/6 | 6/6 |
+| 1295 Find Numbers with Even Number of Digits | 6/6 | 6/6 |
+| **Total** | **57/57** | **57/57** |
+
+Batch 0042 total: 114 assertions passed, 0 failed. Coverage includes duplicate frequency counts, chip parity, balanced-string segmentation, collinear points, row/column increments, grid shifts across wrap boundaries, diagonal point movement, tic-tac-toe wins/draw/pending states, digit product-minus-sum including zero digits, and decimal digit parity. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification does not mean official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0042: 4,077 passed, 0 failed.
+
