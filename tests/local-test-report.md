@@ -895,3 +895,25 @@ Batch 0045 total: 116 assertions passed, 0 failed. Coverage includes average cal
 
 Batch 0045 has been locally tested and pushed. The cumulative assertion count was recalculated across the recorded batch totals; earlier cumulative figures from Batch 0037 onward were overstated by 148 because Batch 0037's 148 assertions had been added twice. Correct cumulative count through Batch 0045: **4,307 passed, 0 failed**. This is local verification, not official LeetCode acceptance.
 
+## Batch 0039 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. The Python harness passed 48 assertions; the Java 21 harness compiled and passed 48 assertions. During testing, the three-part equal-sum edge case `[1,-1,1,-1]` exposed a bug in the initial scan: it could accept two target-sum prefixes without leaving a nonempty third segment. The Python and Java solutions were corrected to require at least one element after the second target-sum segment, and the harnesses were rerun successfully before pushing the solution file.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 976 Largest Perimeter Triangle | 5/5 | 5/5 |
+| 977 Squares of a Sorted Array | 5/5 | 5/5 |
+| 989 Add to Array-Form of Integer | 5/5 | 5/5 |
+| 993 Cousins in Binary Tree | 5/5 | 5/5 |
+| 997 Find the Town Judge | 5/5 | 5/5 |
+| 999 Available Captures for Rook | 3/3 | 3/3 |
+| 1002 Find Common Characters | 5/5 | 5/5 |
+| 1005 Maximize Sum Of Array After K Negations | 5/5 | 5/5 |
+| 1009 Complement of Base 10 Integer | 5/5 | 5/5 |
+| 1013 Partition Array Into Three Parts With Equal Sum | 5/5 | 5/5 |
+| **Total** | **48/48** | **48/48** |
+
+Batch 0039 total: 96 assertions passed, 0 failed. Coverage includes triangle validity, two-pointer square ordering, decimal carry, cousin depth/parent conditions, judge trust scores, rook line-of-sight blockers, character-frequency intersections, sign flips including odd remaining flips, zero bitwise complement, and nonempty equal-sum partitions. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification does not imply official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0039: 3,717 passed, 0 failed.
+
