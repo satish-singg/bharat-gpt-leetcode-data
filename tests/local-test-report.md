@@ -827,3 +827,25 @@ Batch 0042 total: 114 assertions passed, 0 failed. Coverage includes duplicate f
 
 Cumulative recorded local checks through Batch 0042: 4,077 passed, 0 failed.
 
+## Batch 0043 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. The exact Python and Java solution snippets were executed locally; all ten Java snippets compiled.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 1304 Find N Unique Integers Sum up to Zero | 18/18 | 18/18 |
+| 1313 Decompress Run-Length Encoded List | 6/6 | 6/6 |
+| 1323 Maximum 69 Number | 6/6 | 6/6 |
+| 1331 Rank Transform of an Array | 6/6 | 6/6 |
+| 1342 Number of Steps to Reduce a Number to Zero | 6/6 | 6/6 |
+| 1351 Count Negative Numbers in a Sorted Matrix | 6/6 | 6/6 |
+| 1365 How Many Numbers Are Smaller Than the Current Number | 6/6 | 6/6 |
+| 1370 Increasing Decreasing String | 6/6 | 6/6 |
+| 1380 Lucky Numbers in a Matrix | 6/6 | 6/6 |
+| 1389 Create Target Array in the Given Order | 6/6 | 6/6 |
+| **Total** | **72/72** | **72/72** |
+
+Batch 0043 total: 144 assertions passed, 0 failed. Coverage includes distinct zero-sum outputs, run-length expansion including zero frequencies, leftmost digit replacement, rank ties, parity step counts, negative matrix entries, duplicate ranks, ascending/descending character sweeps, row-minimum/column-maximum intersections, and repeated insertion indices. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification is not official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0043: 4,221 passed, 0 failed.
+
