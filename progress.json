@@ -6,11 +6,11 @@
     "problems": 220,
     "solutions": 440,
     "qa": 442,
-    "tested_solution_records": 420
+    "tested_solution_records": 440
   },
   "skipped": 16,
-  "notes": "Batch 0014 records for problems 301, 303, 304, 306, 307, 309, 310, 312, 313, and 315 are present. All three JSONL files were fetched and parsed successfully; solution notes were normalized to six labeled lines and Q&A statuses set to pending. Local Python/Java tests have not yet been run for batch 0014, so its self_check.ran values remain false and tested_solution_records stays at 420. All solution statuses remain pending official/platform evaluation. Shell/SQL-only problems 192-197 remain skipped. User waived separate held-out problem list.",
+  "notes": "Batch 0014 covers problems 301, 303, 304, 306, 307, 309, 310, 312, 313, and 315. Local test report records 34 Python 3 cases and 25 Java 21 cases passed, zero failures; total cumulative local checks 1,410 passed, zero failed. Problem, solution, and Q&A JSONL files were fetched back and parsed; solution notes use six labeled lines and Q&A status is pending. All solution statuses remain pending official/platform evaluation. Shell/SQL-only problems 192-197 remain skipped. User waived separate held-out problem list.",
   "local_test_cases_passed": 1410,
   "local_test_cases_failed": 0,
-  "test_report": "tests/batch_0014-test-report.md"
+  "test_report": "tests/local-test-report.md"
 }
