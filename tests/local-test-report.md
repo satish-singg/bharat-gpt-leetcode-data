@@ -1124,3 +1124,34 @@ Environment: CPython 3.13.5 and OpenJDK/javac 21.0.12.1. The exact Python and Ja
 Batch 0055 total: **74 assertions passed, 0 failed**. Tests cover 3-by-3 matrix windows, sliding-window recoloring, energy/experience training boundaries, star removal including empty output, repeated adjacent sums, frequency tie-breaking and no-even cases, odd/even multiples, descending-height sorting, common divisors, and longest-task duration ties. All ten Java solutions compiled successfully. After push, the JSONL files were fetched from GitHub and validated for 10 problem records, 20 solution records, and 20 Q&A records; problem IDs and (problem, language) keys are unique and aligned, and all 20 solution records have verified self-check counts matching the local cases.
 
 Cumulative tracker after Batch 0055: **5,499 recorded checks passed, 0 failed**. This carries forward the previous recorded baseline plus 74 checks from this batch; earlier historical checks were not independently rerun during this batch. Local verification does not establish official LeetCode acceptance.
+
+# Batch 0055 local verification — 2026-10-23
+
+## Environment and method
+- Python: CPython 3.13.5
+- Java compiler/runtime: `javac --release 21` / Java 21.0.12.1
+- Tests were run against the solution code stored in `data/solutions/batch_0055.jsonl`, not just separate draft implementations.
+- Each Java solution was compiled independently with Java 21 and run through assertions.
+
+## Results
+| Problem | Python 3 | Java 21 | Result |
+|---|---:|---:|---|
+| 2373. Largest Local Values in a Matrix | 3/3 | 3/3 | PASS |
+| 2379. Minimum Recolors to Get K Consecutive Black Blocks | 4/4 | 4/4 | PASS |
+| 2383. Minimum Hours of Training to Win a Competition | 3/3 | 3/3 | PASS |
+| 2390. Removing Stars From a String | 4/4 | 4/4 | PASS |
+| 2395. Find Subarrays With Equal Sum | 4/4 | 4/4 | PASS |
+| 2404. Most Frequent Even Element | 4/4 | 4/4 | PASS |
+| 2413. Smallest Even Multiple | 4/4 | 4/4 | PASS |
+| 2418. Sort the People | 3/3 | 3/3 | PASS |
+| 2427. Number of Common Factors | 4/4 | 4/4 | PASS |
+| 2432. The Employee That Worked on the Longest Task | 4/4 | 4/4 | PASS |
+| **Batch 0055 total** | **37/37** | **37/37** | **PASS** |
+
+- Total local assertions passed: 74
+- Total local assertions failed in final runs: 0
+- Java solutions compiled successfully: 10/10
+- Post-push JSONL validation: 10 problem records, 20 solution records, and 20 Q&A records; valid JSON lines; unique problem IDs and language keys; matching IDs; all 20 solution self-checks marked verified with matching passed/total counts.
+- Cumulative tracker after Batch 0055: 5,499 recorded checks passed, 0 failed. This includes the existing historical baseline plus checks recorded for subsequent batches; the entire historical suite was not rerun in this batch.
+- These are local checks, not official LeetCode acceptance results.
+
