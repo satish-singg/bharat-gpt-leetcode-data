@@ -548,3 +548,10 @@ Environment: CPython 3.13.5 and javac/java 21.0.12.1. All ten Java solution snip
 | **Total** | **50/50** | **50/50** |
 
 Batch 0030 total: 100 checks passed, 0 failed. Coverage includes binary-tree serialization and merging, duplicate-content grouping, triangle counts with repeated and zero values, task cooldowns, row insertion at several depths, negative-product cases, level averages, fixed windows, and duplicate/missing numbers. JSONL validation confirmed 10 problem records, 20 solution records, 20 Q&A records, and aligned IDs. All 20 solution records have executed local check counts; statuses remain pending independent/official evaluation.
+
+
+## Audit update — batches 0025–0029 (2026-10-23)
+
+The batch 0029 solutions were independently rerun locally during this audit. CPython 3.13.5: 51/51 assertions passed. Java 21.0.12.1: all ten solution classes compiled and 51/51 assertions passed. Cases included subtree/null boundaries, candy-type limits, unsorted-range edge cases, LCS deletion cases, N-ary traversal order, harmonious subsequences with negative values, range-operation overlap/no-op cases, tied restaurant index sums, and flower planting including n=0. The batch 0029 solution records are now marked verified.
+
+All solution records in batches 0025–0029 are now marked verified after local checks passed: 102 + 106 + 102 + 94 + 102 = 506 checks, 0 failed. Batch 0027's total is 102 (not the earlier 100) because the Codec tests include six URL round trips per language. Cumulative local checks through Batch 0030 are corrected to 2,521 passed, 0 failed. Batch 0030 remains pending audit/status update despite its existing report showing 100 local checks passed. Local verification is not official LeetCode acceptance.

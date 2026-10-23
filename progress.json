@@ -9,8 +9,8 @@
     "tested_solution_records": 760
   },
   "skipped": 16,
-  "notes": "Dataset files are present through Batch 0030 (problems through #645). Batches 0025-0030 have all 120 Python 3/Java 21 solution records locally exercised: Batch 0025 passed 102 checks, Batch 0026 106, Batch 0027 100, Batch 0028 94, Batch 0029 102, and Batch 0030 100; 0 failures. All Java snippets in these six batches compiled. Batch 0027 Java problem 530 resets traversal state on each call. Batch 0029 problem 605 handles n=0 in both languages. Batch 0030 JSONL validated with 10 problems, 20 solutions, 20 Q&A records and aligned IDs. All solution statuses remain pending independent/official evaluation; local checks are not official acceptance. Premium-locked questions remain excluded.",
-  "local_test_cases_passed": 2519,
+  "notes": "Progress through Batch 0030 (problems through #645). Batches 0025–0029 have all 100 Python 3/Java 21 solution records locally tested and marked verified: Batch 0025 passed 102 checks, Batch 0026 106, Batch 0027 102 (51 Python, 51 Java), Batch 0028 94, and Batch 0029 102 (51 Python, 51 Java). Batch 0030 has a recorded local test report of 100 checks passed and all 20 self_check entries ran=true, but its code/status audit is next. Corrected cumulative local checks: 2,521 passed, 0 failed. All Java snippets in batches 0025–0030 are reported compiled. JSONL schema/count/alignment checks passed for batches 0025–0029; Batch 0030 audit remains pending. Local verification is not official LeetCode acceptance. Premium-locked and SQL-only questions remain excluded.",
+  "local_test_cases_passed": 2521,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
