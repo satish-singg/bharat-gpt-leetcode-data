@@ -1,16 +1,16 @@
 {
-  "last_batch": 30,
-  "last_problem_number": 645,
-  "problems_done": 380,
+  "last_batch": 31,
+  "last_problem_number": 661,
+  "problems_done": 390,
   "records": {
-    "problems": 380,
-    "solutions": 760,
-    "qa": 762,
-    "tested_solution_records": 760
+    "problems": 390,
+    "solutions": 780,
+    "qa": 782,
+    "tested_solution_records": 780
   },
   "skipped": 16,
-  "notes": "Progress through Batch 0030 (problems through #645). Batches 0025–0030 have all 120 Python 3/Java 21 solution records locally tested and marked verified: Batch 0025 passed 102 checks, Batch 0026 106, Batch 0027 102 (51 Python, 51 Java), Batch 0028 94, Batch 0029 102 (51 Python, 51 Java), and Batch 0030 100 (50 Python, 50 Java). Cumulative local checks: 2,521 passed, 0 failed. All Java snippets in batches 0025–0030 compiled. JSONL schemas, counts, unique problem/solution/Q&A keys, and alignment passed for batches 0025–0030. Local verification is not official LeetCode acceptance. Batch 0031 problem/solution/Q&A files exist but their solution records remain pending local audit. Premium-locked and SQL-only questions remain excluded.",
-  "local_test_cases_passed": 2521,
+  "notes": "Progress through Batch 0031 (highest problem #661). Batches 0025–0031 have all 140 Python 3/Java 21 solution records locally tested and marked verified. Batch 0031 passed 53 Python assertions and 53 Java assertions (106 total); all Java solutions compiled under Java 21. A defect in Python #650 (2 Keys Keyboard) was caught by local tests and fixed before the solution update was committed. Cumulative local checks: 2,627 passed, 0 failed. JSONL counts, unique keys, and problem/solution/Q&A alignment passed for Batch 0031. Local verification is not official LeetCode acceptance. Premium-locked and SQL-only questions remain excluded.",
+  "local_test_cases_passed": 2627,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
