@@ -515,3 +515,16 @@ Environment: CPython 3.13.5 and javac/java 21.0.12.1. All ten Java solution snip
 | **Total** | **51/51** | **51/51** |
 
 Batch 0029 total: 102 checks passed, 0 failed. The checks cover subtree equality and null boundaries, distinct candy limits, sorted and unsorted arrays, LCS deletion cases, N-ary preorder/postorder, neighboring frequency counts, empty and overlapping range operations, tied restaurant index sums, and flowerbed boundaries. Testing exposed an edge case in Can Place Flowers when n=0; both implementations now return true immediately for zero requested plantings, and the added test passed. JSONL validated with 10 problem records, 20 solution records, 20 Q&A records and aligned IDs. All 20 solution records record executed checks; status remains pending independent/official evaluation.
+
+
+## Verification correction — batches 0025–0028 (2026-10-23)
+
+This section supersedes stale status/count wording in earlier sections above.
+
+- Batch 0025: 102/102 local checks passed; Java snippets compiled.
+- Batch 0026: 106/106 local checks passed; Java snippets compiled.
+- Batch 0027: 102/102 local checks passed (51 Python 3, 51 Java 21); Java snippets compiled. Problem 535 had six round-trip checks per language, so the earlier 100-check total is superseded by 102.
+- Batch 0028: 94/94 local checks passed; Java snippets compiled.
+- All 80 solution records in batches 0025–0028 are marked verified because their recorded local test suites passed.
+- Batch 0029: the earlier section records 102/102 checks and successful Java compilation, but its solution statuses remain pending until the audit is completed.
+- Cumulative local checks through Batch 0029: 2,421 passed, 0 failed. Local verification is not official LeetCode acceptance.
