@@ -58,6 +58,15 @@ def check(rec, code=None):
     return probs
 
 
+TEMPLATE_REASON = re.compile(r"bounded number of times|algorithm's stack, DP, or collection state|each input element or state", re.I)
+
+
+def check_reason(rec):
+    """fix-task output also carries complexity_reason: one specific sentence"""
+    cr = rec.get("complexity_reason") or ""
+    return ["complexity_reason missing, shorter than 8 words, or the old template sentence"] if (len(cr.split()) < 8 or TEMPLATE_REASON.search(cr)) else []
+
+
 def load(path):
     return [json.loads(l) for l in open(path, encoding="utf-8") if l.strip()]
 
@@ -83,7 +92,7 @@ def main():
     for lab, num, r, code in recs:
         for ln in r.get("notes", "").split("\n")[2:5]: seen[norm(ln.split(":", 1)[-1])].add(num)
     for lab, num, r, code in recs:
-        probs = check(r, code)
+        probs = check(r, code) + (check_reason(r) if a.inp else [])
         for ln in r.get("notes", "").split("\n")[2:5]:
             if len(seen[norm(ln.split(":", 1)[-1])]) > 1: probs.append(f"line also used for another problem: {ln[:70]}..."); break
         if probs: bad += 1; print("FAIL", lab, "|", "; ".join(probs)[:260])
