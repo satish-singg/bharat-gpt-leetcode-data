@@ -9,8 +9,8 @@
     "tested_solution_records": 560
   },
   "skipped": 16,
-  "notes": "Batch 0020 problems 410, 412, 413, 414, 415, 416, 417, 419, 421, and 423 added. Python 3 and Java 21 spot-test harnesses passed 53 recorded cases (27 Python, 26 Java); Java compiled with javac 21.0.12.1. All 20 solution records have self_check.ran=true and local case counts. Status remains pending official/platform evaluation; local checks are not official judge results. Premium-locked questions were excluded.",
-  "local_test_cases_passed": 1731,
+  "notes": "Batch 0020 covers problems 410, 412, 413, 414, 415, 416, 417, 419, 421, and 423. Local tests passed 53 focused cases (27 Python 3, 26 Java 21), zero failed. Cumulative count reconciled from batch reports: 1,729 passed, 0 failed (batch 0019 report records 52, batch 0020 records 53). All 560 solution records through batch 0020 have local self-checks; statuses remain pending official/platform evaluation. JSONL files were fetched back and parsed successfully.",
+  "local_test_cases_passed": 1729,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
