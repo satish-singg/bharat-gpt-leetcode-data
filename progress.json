@@ -6,11 +6,11 @@
     "problems": 350,
     "solutions": 700,
     "qa": 702,
-    "tested_solution_records": 660
+    "tested_solution_records": 680
   },
   "skipped": 16,
-  "notes": "Dataset files are present through Batch 0027 (problems through #543). Batch 0025 has all 20 Python 3 and Java 21 solution records locally exercised: 102 checks passed, 0 failed; all Java solutions compiled. Batch 0025 JSONL validated: 10 problem records, 20 solution records, 20 Q&A records, with problem IDs aligned. Batches 0026 and 0027 are present with 10 problems, 20 solutions, and 20 Q&A records each, but their solution records remain pending/unrun and are not counted as locally tested. Batch 0028 has not been created yet. Local checks are not official LeetCode acceptance. Premium-locked questions remain excluded.",
-  "local_test_cases_passed": 2017,
+  "notes": "Dataset files are present through Batch 0027 (problems through #543). Batches 0025 and 0026 have all 40 Python 3/Java 21 solution records locally exercised: Batch 0025 passed 102 checks; Batch 0026 passed 106 checks; 0 failed overall. All Java solutions in both batches compiled. Batch 0025 JSONL validated with 10 problems, 20 solutions, 20 Q&A records and aligned IDs. Batch 0026 has 10 problems, 20 solutions, and 20 Q&A records; its solution checks are recorded. Batch 0027 files are present but solution code remains pending/unrun. Batch 0028 has not been created yet. Local checks are not official LeetCode acceptance. Premium-locked questions remain excluded.",
+  "local_test_cases_passed": 2123,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
