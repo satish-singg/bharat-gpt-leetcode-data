@@ -1,16 +1,16 @@
 {
-  "last_batch": 23,
-  "last_problem_number": 468,
-  "problems_done": 310,
+  "last_batch": 24,
+  "last_problem_number": 486,
+  "problems_done": 320,
   "records": {
-    "problems": 310,
-    "solutions": 620,
-    "qa": 622,
-    "tested_solution_records": 620
+    "problems": 320,
+    "solutions": 640,
+    "qa": 642,
+    "tested_solution_records": 640
   },
   "skipped": 16,
-  "notes": "Batch 0023 problems 455, 456, 457, 459, 461, 462, 463, 464, 467, 468 completed. 58 recorded local cases passed across Python 3 and Java 21, zero failures recorded; all 20 solution records have self_check.ran=true. JSONL files were fetched back and parsed successfully (10 problems, 20 solutions, 20 Q&A). Status remains pending official/platform evaluation; local checks are not official judge results.",
-  "local_test_cases_passed": 1863,
+  "notes": "Batch 0024 problems 470, 473, 474, 475, 476, 477, 478, 482, 485, and 486 added. Python 3 and Java 21 spot-test harnesses passed 52 recorded cases (26 each); Java compiled with javac 21.0.12.1. All 20 solution records have self_check.ran=true and local case counts. Status remains pending official/platform evaluation; local checks are not official judge results. Premium-locked questions were excluded.",
+  "local_test_cases_passed": 1915,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
