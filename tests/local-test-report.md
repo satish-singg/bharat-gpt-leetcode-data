@@ -717,3 +717,25 @@ Batch 0037 total: 148 assertions passed, 0 failed. Coverage includes odd/even li
 
 Cumulative recorded local checks through Batch 0037: 3,511 passed, 0 failed.
 
+## Batch 0038 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. The exact Python and Java solution snippets were executed locally; all Java solutions compiled, including RecentCounter and tree implementations.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 925 Long Pressed Name | 6/6 | 6/6 |
+| 929 Unique Email Addresses | 5/5 | 5/5 |
+| 933 Number of Recent Calls | 6/6 | 6/6 |
+| 937 Reorder Data in Log Files | 4/4 | 4/4 |
+| 938 Range Sum of BST | 5/5 | 5/5 |
+| 941 Valid Mountain Array | 6/6 | 6/6 |
+| 944 Delete Columns to Make Sorted | 6/6 | 6/6 |
+| 953 Verifying an Alien Dictionary | 6/6 | 6/6 |
+| 961 N-Repeated Element in Size 2N Array | 5/5 | 5/5 |
+| 965 Univalued Binary Tree | 6/6 | 6/6 |
+| **Total** | **55/55** | **55/55** |
+
+Batch 0038 total: 110 assertions passed, 0 failed. Coverage includes long-press repetition, email normalization, the inclusive 3000ms recent-call window, letter/digit log ordering and stable digit logs, BST range pruning, strict mountain peaks, column-order violations, alien-order prefix handling, repeated-value detection, and univalued tree checks. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification does not mean official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0038: 3,621 passed, 0 failed.
+
