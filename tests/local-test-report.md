@@ -695,3 +695,25 @@ Batch 0036 total: 110 assertions passed, 0 failed. Coverage includes strict rect
 
 Cumulative recorded local checks through Batch 0036: 3,215 passed, 0 failed.
 
+## Batch 0037 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. Exact Python and Java snippets from the local JSONL files were executed; all Java implementations compiled with judge-provided linked-list/tree node definitions.
+
+| Problem | Python 3 assertions | Java 21 assertions |
+|---|---:|---:|
+| 876 Middle of the Linked List | 5/5 | 5/5 |
+| 883 Projection Area of 3D Shapes | 6/6 | 6/6 |
+| 884 Uncommon Words from Two Sentences | 5/5 | 5/5 |
+| 888 Fair Candy Swap | 5/5 | 10/10 |
+| 896 Monotonic Array | 6/6 | 6/6 |
+| 897 Increasing Order Search Tree | 25/25 | 5/5 |
+| 905 Sort Array By Parity | 10/10 | 13/13 |
+| 908 Smallest Range I | 6/6 | 6/6 |
+| 914 X of a Kind in a Deck of Cards | 6/6 | 6/6 |
+| 917 Reverse Only Letters | 6/6 | 6/6 |
+| **Total** | **80/80** | **68/68** |
+
+Batch 0037 total: 148 assertions passed, 0 failed. Coverage includes odd/even linked-list lengths, projection totals, uncommon-word sets, candy-swap sum equality, monotonicity in both directions, increasing-order tree shape, parity partitioning, range shrinkage, card-frequency GCDs, and letter-only reversal around punctuation. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Solution status reflects local testing only, not official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0037: 3,511 passed, 0 failed.
+
