@@ -783,3 +783,25 @@ Batch 0040 total: 110 assertions passed, 0 failed. Coverage includes nested prim
 
 Cumulative recorded local checks through Batch 0040: 3,853 passed, 0 failed.
 
+## Batch 0041 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. Both language suites ran locally and all ten Java snippets compiled.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 1108 Defanging an IP Address | 5/5 | 5/5 |
+| 1122 Relative Sort Array | 5/5 | 5/5 |
+| 1128 Number of Equivalent Domino Pairs | 5/5 | 5/5 |
+| 1137 N-th Tribonacci Number | 6/6 | 6/6 |
+| 1154 Day of the Year | 6/6 | 6/6 |
+| 1160 Find Words That Can Be Formed by Characters | 6/6 | 6/6 |
+| 1170 Compare Strings by Frequency of the Smallest Character | 5/5 | 5/5 |
+| 1184 Distance Between Bus Stops | 6/6 | 6/6 |
+| 1185 Day of the Week | 6/6 | 6/6 |
+| 1200 Minimum Absolute Difference | 5/5 | 5/5 |
+| **Total** | **55/55** | **55/55** |
+
+Batch 0041 total: 110 assertions passed, 0 failed. Coverage includes address replacement, relative sort priority and leftovers, reversed domino equivalence, Tribonacci base cases, Gregorian leap-year rules, character-frequency limits, strictly-greater frequency queries, circular route direction, weekday boundaries, and multiple minimum-difference pairs. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. Local verification does not mean official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0041: 3,963 passed, 0 failed.
+
