@@ -959,3 +959,25 @@ Batch 0048: 120 assertions passed, 0 failed. Local testing caught a Python sente
 
 The cumulative tracker carries the previous recorded baseline and adds checks for Batches 0046–0048; older historical totals have not been independently rerun. Local tests do not constitute official LeetCode acceptance.
 
+## Batch 0049 local verification — 2026-10-23
+
+Environment: Python 3 and OpenJDK 21.0.12.1. All ten Python snippets passed six tests each (60/60); all ten Java snippets compiled and passed six tests each (60/60).
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 1957 Delete Characters to Make Fancy String | 6/6 | 6/6 |
+| 1961 Check If String Is a Prefix of Array | 6/6 | 6/6 |
+| 1967 Number of Strings That Appear as Substrings in Word | 6/6 | 6/6 |
+| 1971 Find if Path Exists in Graph | 6/6 | 6/6 |
+| 1974 Minimum Time to Type Word Using Special Typewriter | 6/6 | 6/6 |
+| 1979 Find Greatest Common Divisor of Array | 6/6 | 6/6 |
+| 2011 Final Value of Variable After Performing Operations | 6/6 | 6/6 |
+| 2022 Convert 1D Array Into 2D Array | 6/6 | 6/6 |
+| 2032 Two Out of Three | 6/6 | 6/6 |
+| 2037 Minimum Number of Moves to Seat Everyone | 6/6 | 6/6 |
+| **Total** | **60/60** | **60/60** |
+
+Batch 0049: 120 assertions passed, 0 failed. Coverage includes consecutive-character limits, prefix matching, substring pattern counts, connected/disconnected graph paths, circular typewriter movement, GCD, variable operations, valid and invalid reshape dimensions, set intersection across three arrays, and sorted seat assignment. Post-push validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language keys, verified self-check fields, and alignment.
+
+The cumulative tracker carries the previous recorded baseline and adds checks for Batches 0046–0049; older historical totals have not been independently rerun. Local tests do not constitute official LeetCode acceptance.
+
