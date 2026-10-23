@@ -607,3 +607,25 @@ Batch 0032 total: 137 assertions passed, 0 failed. Coverage includes sparse-tree
 
 Cumulative recorded local checks through Batch 0032: 2,764 passed, 0 failed.
 
+## Batch 0033 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. The Python test harness loaded the exact solution snippets from the batch JSONL; the Java harness compiled and executed the exact Java snippets with judge-compatible tree nodes.
+
+| Problem | Python 3 | Java 21 |
+|---|---:|---:|
+| 693 Binary Number with Alternating Bits | 6/6 | 6/6 |
+| 695 Max Area of Island | 6/6 | 6/6 |
+| 696 Count Binary Substrings | 6/6 | 6/6 |
+| 697 Degree of an Array | 5/5 | 5/5 |
+| 700 Search in a Binary Search Tree | 5/5 | 5/5 |
+| 701 Insert into a Binary Search Tree | 5/5 | 5/5 |
+| 704 Binary Search | 6/6 | 6/6 |
+| 709 To Lower Case | 5/5 | 5/5 |
+| 717 1-bit and 2-bit Characters | 6/6 | 6/6 |
+| 724 Find Pivot Index | 6/6 | 6/6 |
+| **Total** | **56/56** | **56/56** |
+
+Batch 0033 total: 112 assertions passed, 0 failed. Coverage includes alternating-bit integers, island connectivity and diagonal separation, binary group lengths, degree ties, BST search and insertion, binary-search boundaries, case conversion, bit parsing, and positive/negative prefix sums. After push, JSONL validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. All 20 solution records are marked verified for local testing only, not official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0033: 2,876 passed, 0 failed.
+
