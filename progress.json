@@ -1,16 +1,16 @@
 {
-  "last_batch": 24,
-  "last_problem_number": 486,
-  "problems_done": 320,
+  "last_batch": 27,
+  "last_problem_number": 543,
+  "problems_done": 350,
   "records": {
-    "problems": 320,
-    "solutions": 640,
-    "qa": 642,
-    "tested_solution_records": 640
+    "problems": 350,
+    "solutions": 700,
+    "qa": 702,
+    "tested_solution_records": 660
   },
   "skipped": 16,
-  "notes": "Batch 0024 problems 470, 473, 474, 475, 476, 477, 478, 482, 485, and 486 added. Python 3 and Java 21 spot-test harnesses passed 52 recorded cases (26 each); Java compiled with javac 21.0.12.1. All 20 solution records have self_check.ran=true and local case counts. Status remains pending official/platform evaluation; local checks are not official judge results. Premium-locked questions were excluded.",
-  "local_test_cases_passed": 1915,
+  "notes": "Dataset files are present through Batch 0027 (problems through #543). Batch 0025 has all 20 Python 3 and Java 21 solution records locally exercised: 102 checks passed, 0 failed; all Java solutions compiled. Batch 0025 JSONL validated: 10 problem records, 20 solution records, 20 Q&A records, with problem IDs aligned. Batches 0026 and 0027 are present with 10 problems, 20 solutions, and 20 Q&A records each, but their solution records remain pending/unrun and are not counted as locally tested. Batch 0028 has not been created yet. Local checks are not official LeetCode acceptance. Premium-locked questions remain excluded.",
+  "local_test_cases_passed": 2017,
   "local_test_cases_failed": 0,
   "test_report": "tests/local-test-report.md"
 }
