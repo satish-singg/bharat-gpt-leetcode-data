@@ -584,3 +584,26 @@ Environment: CPython 3.13.5 and javac/java 21.0.12.1. All ten Java solution snip
 Batch 0031 total: 106 assertions passed, 0 failed. Tests include published examples, empty/singleton and boundary inputs, duplicates, tree structures, negative values, and matrix borders. Local testing caught an error in the Python #650 implementation: it subtracted one from the remaining prime factor sum. The implementation was corrected to add the remaining factor when greater than one, then the full Python and Java suites passed. JSONL validation confirmed 10 problem records, 20 solution records, 20 Q&A records, unique solution keys, and aligned problem IDs. All 20 solution records are marked verified after these local tests; status is not a claim of official LeetCode acceptance.
 
 Cumulative recorded local checks through Batch 0031: 2,627 passed, 0 failed.
+
+## Batch 0032 local verification — 2026-10-23
+
+Environment: CPython 3.13.5 and javac/java 21.0.12.1. All ten Java solution snippets compiled and ran locally before the solution file was committed.
+
+| Problem | Python 3 assertions | Java 21 assertions |
+|---|---:|---:|
+| 662 Maximum Width of Binary Tree | 5/5 | 5/5 |
+| 665 Non-decreasing Array | 5/5 | 5/5 |
+| 667 Beautiful Arrangement II | 15/15 | 28/28 |
+| 669 Trim a Binary Search Tree | 5/5 | 5/5 |
+| 671 Second Minimum Node In a Binary Tree | 5/5 | 5/5 |
+| 674 Longest Continuous Increasing Subsequence | 5/5 | 5/5 |
+| 680 Valid Palindrome II | 6/6 | 6/6 |
+| 682 Baseball Game | 5/5 | 5/5 |
+| 684 Redundant Connection | 5/5 | 5/5 |
+| 687 Longest Univalue Path | 6/6 | 6/6 |
+| **Total** | **62/62** | **75/75** |
+
+Batch 0032 total: 137 assertions passed, 0 failed. Coverage includes sparse-tree widths, one-change array cases, generated permutations checked for size/uniqueness/difference count, BST trimming boundaries, second-minimum cases, increasing-run resets, palindrome deletions, baseball cancellations and scoring, cycle detection, and equal-value tree paths. JSONL validation after push confirmed 10 problem records, 20 solution records, 20 Q&A records, unique language-specific keys, and aligned problem IDs. All 20 solution records are marked verified for local testing only, not official LeetCode acceptance.
+
+Cumulative recorded local checks through Batch 0032: 2,764 passed, 0 failed.
+
