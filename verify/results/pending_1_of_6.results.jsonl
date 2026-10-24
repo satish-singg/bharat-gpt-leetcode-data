@@ -23,7 +23,7 @@
 {"id":"12:python3:greedy","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
 {"id":"12:java:greedy","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
 {"id":"13:python3:math_formula","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
-{"id":"13:java:math_formula","examples":"error","random_tests":0,"random":"error","max_size":"error","compiled":false,"verdict":"fail","failing_input":"","note":"javac 21 failed: Map is not imported, so the symbol cannot be resolved."}
+{"id":"13:java:math_formula","examples":"error","random_tests":0,"random":"error","max_size":"error","compiled":false,"verdict":"unclear","failing_input":"","note":"javac 21 failed: Map is not imported, so the symbol cannot be resolved; solution was not run."}
 {"id":"14:python3:other_vertical_scan","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
 {"id":"14:java:other_vertical_scan","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
 {"id":"15:python3:two_pointers","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
@@ -69,7 +69,7 @@
 {"id":"35:python3:binary_search","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
 {"id":"35:java:binary_search","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
 {"id":"36:python3:other_bitmask_sets","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
-{"id":"36:java:other_bitmask_sets","examples":"error","random_tests":0,"random":"error","max_size":"error","compiled":false,"verdict":"fail","failing_input":"","note":"javac 21 failed: Set and HashSet are not imported, so those symbols cannot be resolved."}
+{"id":"36:java:other_bitmask_sets","examples":"error","random_tests":0,"random":"error","max_size":"error","compiled":false,"verdict":"unclear","failing_input":"","note":"javac 21 failed: Set and HashSet are not imported, so those symbols cannot be resolved; solution was not run."}
 {"id":"37:python3:backtracking","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
 {"id":"37:java:backtracking","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
 {"id":"38:python3:simulation","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
