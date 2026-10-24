@@ -7,8 +7,8 @@ Why this task and not more new problems: the repo already has ~4,800 problems wi
 Do NOT touch `data/`, `corpus/`, `annotate/`, `annotated/`, `fixnotes/in`, `fixnotes/out`, `locked/`.
 
 ## Part B first (small): the 69 records to redo
-Input `fixnotes/redo_annotations_in.jsonl` (69 records). Write `fixnotes/redo_annotations_out.jsonl`, one line per input, SAME ORDER, `{"id","notes"}`. Use the **v2 format below** (eight lines).
-For each record RUN the code (statement examples plus a small brute-force comparison on random small inputs). If the code is correct, write the note. If it is wrong, do not write notes; write `{"id": "...", "flag": "<one sentence: an input where it fails and what it returns>"}`. Do not claim you ran something you did not run.
+Input `fixnotes/redo_annotations_in.jsonl` (69 records). Write `fixnotes/redo_annotations_out.jsonl`, one line per input, SAME ORDER, `{"id","notes"}` in the **v2 format below** (eight lines).
+You cannot execute code, so do NOT claim to have run anything. The code in these records already passed the statement examples. Write the note for what the code does. If, by reading, you think the code is wrong on some input, still write the note and add a field `"suspect": "<one sentence: the input you think fails and the output you expect>"` (the owner runs these suspects on a real machine). Be careful: a string/bit trick that looks wrong is often right (for example `bin(num)` counts the `0` of the `0b` prefix). Only mark `suspect` when you can name a concrete failing input and work the code through it by hand. Do not write `flag` records.
 
 ## Part A: annotation batches (the main work)
 Input: `annotate2/batch_NNNN.jsonl`, 100 batches of 20, **in ascending order starting with 0001**. One JSON line per solution:
@@ -52,7 +52,7 @@ Complexity: Time O(n) because each index enters and leaves dq once, space O(n) f
 8. Never include a problem from `locked/locked_leetcode_numbers.txt` (the batches already exclude them; if you see one, skip it and say so in your report).
 
 ## Checking (you have no shell, the repo checks for you)
-Every push triggers the GitHub Action `validate-notes` (it runs `python3 tools/validate_notes.py --in annotate2 --out annotated2 --no-reason`, and checks Part B with the old rules plus v2). After each push open the run for your commit: it must be green. If it is red, the log lists each failing id and the reason; fix those lines in the same file and push again. If you can run Python yourself, run `python3 tools/validate_notes.py --in annotate2 --out annotated2 --no-reason` before pushing: it is the same check. Do not report a result you did not see.
+Every push triggers the GitHub Action `validate-notes` (it runs `python3 tools/validate_notes.py --in annotate2 --out annotated2 --no-reason` for the annotation batches and the same checker for Part B). After each push open the run for your commit: it must be green. If it is red, the log lists each failing id and the reason; fix those lines in the same file and push again. If you can run Python yourself, run `python3 tools/validate_notes.py --in annotate2 --out annotated2 --no-reason` before pushing: it is the same check. Do not report a result you did not see.
 
 ## Process
 - `git pull --rebase` (or re-read the latest state through the connector) before every push.
