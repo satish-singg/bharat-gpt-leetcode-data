@@ -1,0 +1,54 @@
+name: verify-records
+# Executes the code of every verify/pending_*_of_6.jsonl record (statement examples, Python and Java) on a GitHub runner,
+# writes verify/runner/<name>.runner.jsonl, compares with ChatGPT's verdicts and commits the runner files back.
+on:
+  push:
+    paths: ["verify/pending_*.jsonl", "verify/results/**", "tools/verify_records.py", "tools/compare_verify.py", "tools/java_examples.py", "tools/build_leetcode_corpus.py"]
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "optional: one file stem, e.g. pending_3_of_6 (empty = all)"
+        required: false
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: verify-records
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: "21" }
+      - name: Run the records
+        env:
+          ONLY: ${{ github.event.inputs.only }}
+        run: |
+          mkdir -p verify/runner
+          for f in verify/pending_*_of_6.jsonl; do
+            stem=$(basename "$f" .jsonl)
+            if [ -n "$ONLY" ] && [ "$ONLY" != "$stem" ]; then continue; fi
+            echo "::group::$stem"
+            python3 tools/verify_records.py --mode examples --in "$f" --out "verify/runner/$stem.runner.jsonl" --workers 4
+            echo "::endgroup::"
+          done
+      - name: Compare with ChatGPT and write the summary
+        run: |
+          for r in verify/runner/*.runner.jsonl; do
+            stem=$(basename "$r" .runner.jsonl)
+            python3 tools/compare_verify.py "$stem" | tee -a "$GITHUB_STEP_SUMMARY"
+            echo >> "$GITHUB_STEP_SUMMARY"
+          done
+      - name: Commit the runner results
+        run: |
+          git config user.name "verify-records"
+          git config user.email "actions@users.noreply.github.com"
+          git add verify/runner
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -q -m "verify-records: runner results [skip ci]"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break || sleep 5; done
