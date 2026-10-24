@@ -28,3 +28,13 @@
 {"id":"64:java:dp_bottom_up","examples":"error","random_tests":0,"random":"error","max_size":"not_run","compiled":false,"verdict":"fail","note":"javac 21 compile failed: missing import for Arrays."}
 {"id":"65:python3:other_finite_state","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
 {"id":"65:java:other_finite_state","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"66:python3:array","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"66:java:array","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"67:python3:math_formula","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"67:java:math_formula","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"68:python3:simulation","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"68:java:simulation","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"69:python3:binary_search","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"69:java:binary_search","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"70:python3:dp_space_optimized","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"70:java:dp_space_optimized","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
