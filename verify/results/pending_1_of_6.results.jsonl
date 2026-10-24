@@ -38,3 +38,13 @@
 {"id":"19:java:linked_list_pointers","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
 {"id":"20:python3:stack","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
 {"id":"20:java:stack","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
+{"id":"21:python3:linked_list_pointers","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
+{"id":"21:java:linked_list_pointers","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
+{"id":"22:python3:backtracking","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
+{"id":"22:java:backtracking","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
+{"id":"23:python3:heap","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
+{"id":"23:java:heap","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
+{"id":"24:python3:linked_list_pointers","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
+{"id":"24:java:linked_list_pointers","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
+{"id":"25:python3:linked_list_pointers","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
+{"id":"25:java:linked_list_pointers","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
