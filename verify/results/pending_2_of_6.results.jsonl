@@ -88,3 +88,13 @@
 {"id":"94:java:tree_dfs","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
 {"id":"95:python3:tree_dfs","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
 {"id":"95:java:tree_dfs","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"96:python3:dp_bottom_up","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"96:java:dp_bottom_up","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"97:python3:dp_bottom_up","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"97:java:dp_bottom_up","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"98:python3:tree_dfs","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"98:java:tree_dfs","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"99:python3:tree_dfs","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"99:java:tree_dfs","examples":"error","random_tests":0,"random":"error","max_size":"not_run","compiled":false,"verdict":"fail","note":"javac 21 compile failed: missing imports for Deque and ArrayDeque."}
+{"id":"100:python3:tree_dfs","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"100:java:tree_dfs","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
