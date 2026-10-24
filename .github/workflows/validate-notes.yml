@@ -1,7 +1,7 @@
 name: validate-notes
 on:
   push:
-    paths: ["fixnotes/out/**", "fixnotes/redo_annotations_out.jsonl", "data/solutions/**", "tools/validate_notes.py"]
+    paths: ["annotated2/**", "fixnotes/out/**", "fixnotes/redo_annotations_out.jsonl", "data/solutions/**", "tools/validate_notes.py"]
   workflow_dispatch: {}
 jobs:
   validate:
@@ -17,3 +17,13 @@ jobs:
         run: |
           files=$(ls data/solutions/batch_*.jsonl | awk -F'[_.]' '{ if ($3+0 >= 60) print }')
           if [ -n "$files" ]; then python3 tools/validate_notes.py --solutions $files; else echo "no new batches yet"; fi
+      - name: Annotation task (annotated2)
+        run: |
+          if ls annotated2/*.jsonl >/dev/null 2>&1; then python3 tools/validate_notes.py --in annotate2 --out annotated2 --no-reason; else echo "no annotated2 output yet"; fi
+      - name: Annotation redo (Part B)
+        run: |
+          if [ -f fixnotes/redo_annotations_out.jsonl ]; then
+            mkdir -p /tmp/ri /tmp/ro && cp fixnotes/redo_annotations_in.jsonl /tmp/ri/redo.jsonl
+            python3 -c "import json; open('/tmp/ro/redo.jsonl','w').write(''.join(l for l in open('fixnotes/redo_annotations_out.jsonl') if l.strip() and 'notes' in json.loads(l)))"
+            python3 tools/validate_notes.py --in /tmp/ri --out /tmp/ro --no-reason
+          else echo "no redo output yet"; fi

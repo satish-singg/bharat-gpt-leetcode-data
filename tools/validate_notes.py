@@ -2,9 +2,10 @@
 """Checker for reasoning notes. Used by ChatGPT before every commit and by us before training.
 
   python3 tools/validate_notes.py --solutions data/solutions/batch_0060.jsonl [more files]     # notes inside solution records (new batches)
+  python3 tools/validate_notes.py --in annotate2 --out annotated2 --no-reason                  # annotation task (outputs {"id","notes"})
   python3 tools/validate_notes.py --in fixnotes/in --out fixnotes/out                          # fix task: out lines {"id","notes","complexity_reason"} joined to in lines by id
 Exit code 1 and a list of problems when anything fails. A record passes only if ALL of these hold:
-  1. `notes` is exactly six lines starting with the labels: Task and constraints / Idea / Technique and why it applies / Invariant / Edge cases / Complexity
+  1. `notes` is exactly six lines (format v1: Task and constraints / Idea / Technique and why it applies / Invariant / Edge cases / Complexity) OR eight lines (format v2: Task and constraints / Scale / Idea / Rejected / Technique and why it applies / Invariant / Edge cases / Complexity); v2 is for all new work
   2. 60-220 words in total; no chat words (wait, hmm, let's), no code blocks, no markdown
   3. none of the known template sentences (see BANNED) and no meta talk about tests ("local tests", "self-check")
   4. the Invariant line is not a copy or near copy of the Idea line
@@ -15,6 +16,17 @@ Exit code 1 and a list of problems when anything fails. A record passes only if 
 import argparse, glob, json, os, re, sys, collections
 
 LAB = ["Task and constraints:", "Idea:", "Technique and why it applies:", "Invariant:", "Edge cases:", "Complexity:"]
+LAB2 = ["Task and constraints:", "Scale:", "Idea:", "Rejected:", "Technique and why it applies:", "Invariant:", "Edge cases:", "Complexity:"]   # note format v2 (8 lines)
+FAIL_WORDS = re.compile(r"\b(fail|fails|tle|too slow|times? out|overflow|wrong|incorrect|breaks?|misses|miss|invalid|cannot|can't|exceeds?|quadratic|redundant|unsafe)\b|O\(", re.I)
+
+
+def parse(n):
+    """-> (version, {label: text}) or (None, None). v1 = six lines, v2 = eight lines with Scale and Rejected."""
+    lines = n.split("\n")
+    for ver, lab in ((1, LAB), (2, LAB2)):
+        if len(lines) == len(lab) and all(x.startswith(y) for x, y in zip(lines, lab)):
+            return ver, {y[:-1]: x.split(":", 1)[1].strip() for x, y in zip(lines, lab)}
+    return None, None
 BANNED = [r"six local tests", r"local tests?", r"self[- ]check", r"where permitted, boundaries", r"maintained accumulator", r"preserve (all )?(the )?information (needed|required)",
           r"minimal structures", r"relevant boundaries", r"handled as relevant", r"\bTask: Solve\b", r"empty or singleton inputs where permitted",
           r"stack, dp state, sorted ordering", r"\b(wait|hmm)\b", r"let'?s think", r"as an ai", r"```", r"^#"]
@@ -40,22 +52,35 @@ def idents(code):
 
 def check(rec, code=None):
     """returns a list of problems for one record (rec has `notes`; code from rec or the argument)"""
-    n = rec.get("notes", ""); probs = []; lines = n.split("\n")
-    if not (len(lines) == 6 and all(x.startswith(y) for x, y in zip(lines, LAB))): return ["not exactly six lines with the six labels in order"]
-    w = len(words(n))
-    if not 60 <= w <= 220: probs.append(f"{w} words (need 60-220)")
+    n = rec.get("notes", ""); probs = []
+    ver, L = parse(n)
+    if ver is None: return ["not exactly six lines (v1) or eight lines (v2: with Scale and Rejected) with the labels in order"]
+    w = len(words(n)); lo, hi = (60, 220) if ver == 1 else (80, 270)
+    if not lo <= w <= hi: probs.append(f"{w} words (need {lo}-{hi})")
     for pat in BANNED:
         if re.search(pat, n, re.I | re.M): probs.append(f"banned phrase /{pat}/")
-    idea, inv, edge, comp = (lines[i].split(":", 1)[1].strip() for i in (1, 3, 4, 5))
+    idea, inv, edge, comp = L["Idea"], L["Invariant"], L["Edge cases"], L["Complexity"]
     if jacc(idea, inv) > 0.6: probs.append("Invariant repeats the Idea line")
     if "O(" not in comp and "not established" not in comp.lower(): probs.append("Complexity line has no O(...)")
     if len(words(edge)) < 8: probs.append("Edge cases line shorter than 8 words")
+    if ver == 2:
+        sc, rej = L["Scale"], L["Rejected"]
+        if not ((re.search(r"\d", sc) and "O(" in sc) or "not stated" in sc.lower()): probs.append("Scale line needs the maximum size from the statement (a number) and the complexity ceiling O(...), or 'not stated'")
+        if len(words(rej)) < 10 or not FAIL_WORDS.search(rej): probs.append("Rejected line needs a named naive/tempting approach and the concrete reason it fails (>= 10 words)")
+        if jacc(rej, idea) > 0.6: probs.append("Rejected repeats the Idea line")
     code = code if code is not None else rec.get("code", "")
     ids = idents(code)
     if ids:
         hit = sum(1 for i in ids if re.search(re.escape(i), n, re.I if len(i) > 3 else 0))
         if hit < 1: probs.append(f"the notes use none of the names in this code - describe THIS code (its variables, helper methods, data structures)")
     return probs
+
+
+def dup_lines(n):
+    """the lines that must not be identical for a different problem"""
+    ver, L = parse(n)
+    if ver is None: return []
+    return [L[k] for k in ("Technique and why it applies", "Invariant", "Edge cases") + (("Rejected", "Scale") if ver == 2 else ())]
 
 
 TEMPLATE_REASON = re.compile(r"bounded number of times|algorithm's stack, DP, or collection state|each input element or state", re.I)
@@ -74,6 +99,7 @@ def load(path):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--solutions", nargs="*", default=[]); ap.add_argument("--in", dest="inp"); ap.add_argument("--out")
+    ap.add_argument("--no-reason", action="store_true", help="annotation outputs have no complexity_reason field")
     ap.add_argument("--all-lines-index", default="data/solutions", help="folder whose notes are used for the cross-record duplicate-line test")
     a = ap.parse_args()
     recs = []                                                     # (label, problem key, record, code)
@@ -90,11 +116,11 @@ def main():
                 recs.append((f"{os.path.basename(p)} {r['id']}", src["number"], r, src["code"]))
     bad = 0; seen = collections.defaultdict(set)                  # normalised line -> problem numbers using it
     for lab, num, r, code in recs:
-        for ln in r.get("notes", "").split("\n")[2:5]: seen[norm(ln.split(":", 1)[-1])].add(num)
+        for ln in dup_lines(r.get("notes", "")): seen[norm(ln)].add(num)
     for lab, num, r, code in recs:
-        probs = check(r, code) + (check_reason(r) if a.inp else [])
-        for ln in r.get("notes", "").split("\n")[2:5]:
-            if len(seen[norm(ln.split(":", 1)[-1])]) > 1: probs.append(f"line also used for another problem: {ln[:70]}..."); break
+        probs = check(r, code) + (check_reason(r) if a.inp and not a.no_reason else [])
+        for ln in dup_lines(r.get("notes", "")):
+            if len(seen[norm(ln)]) > 1: probs.append(f"line also used for another problem: {ln[:70]}..."); break
         if probs: bad += 1; print("FAIL", lab, "|", "; ".join(probs)[:260])
     print(f"checked {len(recs)} records, {bad} failed")
     sys.exit(1 if bad else 0)
