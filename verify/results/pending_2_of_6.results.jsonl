@@ -78,3 +78,13 @@
 {"id":"89:java:bit_manipulation","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
 {"id":"90:python3:backtracking","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
 {"id":"90:java:backtracking","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"91:python3:dp_bottom_up","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"91:java:dp_bottom_up","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"92:python3:linked_list_pointers","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"92:java:linked_list_pointers","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"93:python3:backtracking","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"93:java:backtracking","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"94:python3:tree_dfs","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"94:java:tree_dfs","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"95:python3:tree_dfs","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"95:java:tree_dfs","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
