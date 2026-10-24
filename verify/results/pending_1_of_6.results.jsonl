@@ -8,3 +8,13 @@
 {"id":"4:java:binary_search","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
 {"id":"5:python3:two_pointers","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
 {"id":"5:java:two_pointers","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
+{"id":"6:python3:simulation","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
+{"id":"6:java:simulation","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
+{"id":"7:python3:math_formula","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
+{"id":"7:java:math_formula","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
+{"id":"8:python3:simulation","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
+{"id":"8:java:simulation","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
+{"id":"9:python3:math_formula","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
+{"id":"9:java:math_formula","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
+{"id":"10:python3:dp_bottom_up","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":null,"verdict":"pass","failing_input":"","note":""}
+{"id":"10:java:dp_bottom_up","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","failing_input":"","note":""}
