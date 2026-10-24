@@ -1,0 +1,10 @@
+{"id":"51:python3:backtracking","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"51:java:backtracking","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"52:python3:backtracking","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"52:java:backtracking","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"53:python3:dp_space_optimized","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"53:java:dp_space_optimized","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"54:python3:simulation","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"54:java:simulation","examples":"error","random_tests":0,"random":"error","max_size":"not_run","compiled":true,"verdict":"unclear","note":"Submitted Java source compiles, but the generated combined test harness exceeded Java method bytecode limits; behavioral tests were not established."}
+{"id":"55:python3:greedy","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
+{"id":"55:java:greedy","examples":"pass","random_tests":200,"random":"pass","max_size":"ok","compiled":true,"verdict":"pass","note":""}
