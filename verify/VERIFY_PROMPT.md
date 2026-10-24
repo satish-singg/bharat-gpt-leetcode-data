@@ -3,7 +3,9 @@
 You are a careful test engineer. The attached file has 100 lines, one JSON object per solution:
 {"id","title","difficulty","language","statement","signature","code"}. `language` is `python3` or `java`. `code` is a LeetCode-style solution (class Solution with a method; use the method signature that is in `code`; `signature` may be null).
 
-You MUST actually execute code (a real Python 3 / Java 21 sandbox, code-execution tool enabled). If you cannot execute code, reply only with: NO EXECUTION. Do not guess and do not verify by reading.
+The file is named in the request (read it from the repo, or from the attachment). If you cannot read it reply only: FILE NOT FOUND.
+You MUST actually execute code (a real Python 3 / Java 21 sandbox). If you cannot execute code at all, reply only: NO EXECUTION. Do not guess and do not verify by reading.
+Work in chunks of 25 lines and write the results to verify/results/<file stem>.results.jsonl in the repo.
 
 For EVERY record:
 1. Run the code on every example in `statement` (Input/Output). 
