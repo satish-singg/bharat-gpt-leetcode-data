@@ -23,6 +23,9 @@ sys.path[:0] = [HERE, ROOT]
 RUNNER_VERSION = "verify_records/1 (examples + stdio; no stress tests)"
 
 
+DISPLAY_IN = re.compile(r"[A-Za-z_]\w*\s*(\[\])?\s*=\s*\S")
+
+
 def sha(s): return hashlib.sha256(s.encode("utf-8", "replace")).hexdigest()
 
 
@@ -163,6 +166,8 @@ def run_stdio_mode(recs, min_tests):
         lang = {"python3": "python", "python": "python", "java": "java", "cpp": "cpp", "c++": "cpp"}.get(r["language"].lower())
         tests = r.get("tests") or []
         if not lang or not tests: out[r["id"]] = ("collected", "no_tests_or_unsupported_language", len(tests), 0, 0); continue
+        if any(DISPLAY_IN.match((t.get("stdin") or "").lstrip()) for t in tests):    # GfG-style "N = 5 / A = {1,2}" example text, not what a stdin program reads: the TEST cannot judge a program, which says nothing about the code
+            out[r["id"]] = ("collected", "tests_in_display_format(name = value)", len(tests), 0, 0); continue
         if missing_tools(lang): out[r["id"]] = ("collected", "toolchain_missing:" + ",".join(missing_tools(lang)), len(tests), 0, 0); continue
         item = {"language": lang, "tests": json.dumps([{"name": f"t{i}", "stdin": t["stdin"], "stdout": t["stdout"]} for i, t in enumerate(tests)]),
                 "time_limit_s": r.get("time_limit_s", 10), "item_timeout_s": 60}
