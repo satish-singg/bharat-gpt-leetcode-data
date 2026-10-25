@@ -111,12 +111,19 @@ def normalise_statement(st, sig=None):
     return st + "\n\n" + "\n".join(blocks) if blocks else st
 
 
+def jsonable(x):
+    try: json.dumps(x); return True
+    except (TypeError, ValueError): return False
+
+
 def run_examples_mode(recs, workers):
     from build_leetcode_corpus import parse_examples, run_examples
     import java_examples
     out = {}; pyjobs = []; jjobs = []
     for r in recs:
-        ex = parse_examples(normalise_statement(r.get("statement", ""), r.get("signature"))); r["_ex"] = ex
+        ex = parse_examples(normalise_statement(r.get("statement", ""), r.get("signature")))
+        ex = [e for e in ex if jsonable(e)]               # an example written with "..." (e.g. nums = [1,2,...]) parses to Ellipsis: it cannot be run, drop it instead of crashing the whole batch
+        r["_ex"] = ex
         if not ex: out[r["id"]] = ("collected", "no_parseable_examples", 0, 0, 0); continue
         if r["language"].startswith("python"):
             try: compile(r["code"], "<rec>", "exec")
@@ -150,7 +157,7 @@ def run_examples_mode(recs, workers):
 
 
 def run_stdio_mode(recs, min_tests):
-    from eval_framework.runners.code_runner import run_code, missing_tools  # stdio mode needs the code repo; not used by the examples workflow
+    from eval_framework.runners.code_runner import run_code, missing_tools
     out = {}
     for r in recs:
         lang = {"python3": "python", "python": "python", "java": "java", "cpp": "cpp", "c++": "cpp"}.get(r["language"].lower())
