@@ -1,0 +1,1175 @@
+{
+ "problems": 950,
+ "bad": [
+  {
+   "id": "np-0002",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0016",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0020",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0025",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0038",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0055",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0084",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected",
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0085",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "reference_python sample 1: output != expected",
+    "reference_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0091",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: crash: IndentationError: unexpected indent",
+    "brute_force_python sample 0: crash: IndentationError: unexpected indent",
+    "reference_python sample 1: crash: IndentationError: unexpected indent",
+    "brute_force_python sample 1: crash: IndentationError: unexpected indent",
+    "reference_python sample 2: crash: IndentationError: unexpected indent",
+    "brute_force_python sample 2: crash: IndentationError: unexpected indent"
+   ]
+  },
+  {
+   "id": "np-0097",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: crash: IndentationError: unexpected indent",
+    "reference_python sample 1: crash: IndentationError: unexpected indent",
+    "reference_python sample 2: crash: IndentationError: unexpected indent"
+   ]
+  },
+  {
+   "id": "np-0102",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0103",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: crash: SyntaxError: '(' was never closed",
+    "brute_force_python sample 1: crash: SyntaxError: '(' was never closed",
+    "brute_force_python sample 2: crash: SyntaxError: '(' was never closed"
+   ]
+  },
+  {
+   "id": "np-0107",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0109",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0111",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0119",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 1: crash: ValueError: max() iterable argument is empty"
+   ]
+  },
+  {
+   "id": "np-0125",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: crash: SyntaxError: '(' was never closed",
+    "brute_force_python sample 1: crash: SyntaxError: '(' was never closed",
+    "brute_force_python sample 2: crash: SyntaxError: '(' was never closed"
+   ]
+  },
+  {
+   "id": "np-0132",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0137",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0143",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0159",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0163",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0172",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0175",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: crash: SyntaxError: '(' was never closed",
+    "brute_force_python sample 1: crash: SyntaxError: '(' was never closed",
+    "brute_force_python sample 2: crash: SyntaxError: '(' was never closed"
+   ]
+  },
+  {
+   "id": "np-0176",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected",
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0180",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0188",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected",
+    "brute_force_python sample 1: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0189",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0192",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0200",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0203",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected",
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected",
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0208",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "reference_python sample 1: output != expected",
+    "reference_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0210",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected",
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected",
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0217",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected",
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0224",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: crash: IndexError: list index out of range",
+    "reference_python sample 1: crash: IndexError: list index out of range",
+    "reference_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0248",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "reference_python sample 1: output != expected",
+    "reference_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0259",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0262",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "brute_force_python sample 0: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "reference_python sample 1: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "brute_force_python sample 1: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "reference_python sample 2: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "brute_force_python sample 2: crash: ValueError: not enough values to unpack (expected 2, got 1)"
+   ]
+  },
+  {
+   "id": "np-0263",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "brute_force_python sample 0: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "reference_python sample 1: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "brute_force_python sample 1: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "reference_python sample 2: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "brute_force_python sample 2: crash: ValueError: not enough values to unpack (expected 2, got 1)"
+   ]
+  },
+  {
+   "id": "np-0264",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "brute_force_python sample 0: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "reference_python sample 1: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "brute_force_python sample 1: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "reference_python sample 2: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "brute_force_python sample 2: crash: ValueError: not enough values to unpack (expected 2, got 1)"
+   ]
+  },
+  {
+   "id": "np-0267",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: crash: ValueError: invalid literal for int() with base 10: '3\\\\nflower\\\\nflow\\\\nflight'",
+    "brute_force_python sample 0: crash: ValueError: invalid literal for int() with base 10: '3\\\\nflower\\\\nflow\\\\nflight'",
+    "reference_python sample 1: crash: ValueError: invalid literal for int() with base 10: '2\\\\ndog\\\\ndot'",
+    "brute_force_python sample 1: crash: ValueError: invalid literal for int() with base 10: '2\\\\ndog\\\\ndot'",
+    "reference_python sample 2: crash: ValueError: invalid literal for int() with base 10: '2\\\\ncat\\\\ndog'",
+    "brute_force_python sample 2: crash: ValueError: invalid literal for int() with base 10: '2\\\\ncat\\\\ndog'"
+   ]
+  },
+  {
+   "id": "np-0270",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "brute_force_python sample 0: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "reference_python sample 1: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "brute_force_python sample 1: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "reference_python sample 2: crash: ValueError: not enough values to unpack (expected 2, got 1)",
+    "brute_force_python sample 2: crash: ValueError: not enough values to unpack (expected 2, got 1)"
+   ]
+  },
+  {
+   "id": "np-0276",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0281",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0303",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0330",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0332",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0334",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0336",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0337",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0339",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected",
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0343",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0346",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0350",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0353",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0358",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0394",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0401",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0403",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0405",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0406",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0412",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: crash: IndentationError: unexpected indent",
+    "brute_force_python sample 0: crash: timeout",
+    "reference_python sample 1: crash: IndentationError: unexpected indent",
+    "reference_python sample 2: crash: IndentationError: unexpected indent"
+   ]
+  },
+  {
+   "id": "np-0415",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0416",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: crash: IndexError: list index out of range",
+    "brute_force_python sample 1: crash: IndexError: list index out of range",
+    "brute_force_python sample 2: crash: IndexError: list index out of range"
+   ]
+  },
+  {
+   "id": "np-0430",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: crash: IndentationError: unexpected indent",
+    "brute_force_python sample 1: crash: IndentationError: unexpected indent",
+    "brute_force_python sample 2: crash: IndentationError: unexpected indent"
+   ]
+  },
+  {
+   "id": "np-0439",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0450",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0452",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0457",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected",
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0463",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0468",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0469",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected",
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0472",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0481",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0488",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0498",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0505",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0506",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0528",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0530",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0532",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: crash: timeout",
+    "reference_python sample 2: crash: NameError: name 'v' is not defined"
+   ]
+  },
+  {
+   "id": "np-0533",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0534",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0553",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0566",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0589",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0597",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0606",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected",
+    "brute_force_python sample 1: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0609",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0615",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0618",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0630",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected",
+    "brute_force_python sample 1: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0635",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: crash: UnboundLocalError: cannot access local variable 'q' where it is not associated with a value",
+    "brute_force_python sample 1: crash: UnboundLocalError: cannot access local variable 'q' where it is not associated with a value",
+    "brute_force_python sample 2: crash: UnboundLocalError: cannot access local variable 'q' where it is not associated with a value"
+   ]
+  },
+  {
+   "id": "np-0640",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0642",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0643",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected",
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected",
+    "reference_python sample 2: crash: IndexError: list index out of range",
+    "brute_force_python sample 2: crash: IndexError: list index out of range"
+   ]
+  },
+  {
+   "id": "np-0646",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0649",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0672",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0674",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0675",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: crash: IndexError: list index out of range",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0676",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0681",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "reference_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0701",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: crash: timeout",
+    "reference_python sample 2: crash: timeout"
+   ]
+  },
+  {
+   "id": "np-0703",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0718",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0731",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0736",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0740",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0744",
+   "missing": [],
+   "issues": [
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0756",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0759",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: crash: IndentationError: unexpected indent",
+    "brute_force_python sample 0: crash: IndentationError: unexpected indent",
+    "reference_python sample 1: crash: IndentationError: unexpected indent",
+    "brute_force_python sample 1: crash: IndentationError: unexpected indent",
+    "reference_python sample 2: crash: IndentationError: unexpected indent",
+    "brute_force_python sample 2: crash: IndentationError: unexpected indent"
+   ]
+  },
+  {
+   "id": "np-0761",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0765",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0768",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "reference_python sample 1: crash: timeout",
+    "reference_python sample 2: crash: timeout"
+   ]
+  },
+  {
+   "id": "np-0771",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0778",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0779",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0783",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected"
+   ]
+  },
+  {
+   "id": "np-0823",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0826",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: crash: SyntaxError: '(' was never closed",
+    "brute_force_python sample 1: crash: SyntaxError: '(' was never closed",
+    "brute_force_python sample 2: crash: SyntaxError: '(' was never closed"
+   ]
+  },
+  {
+   "id": "np-0863",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "reference_python sample 1: output != expected",
+    "reference_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0868",
+   "missing": [],
+   "issues": [
+    "reference_python sample 1: output != expected"
+   ]
+  },
+  {
+   "id": "np-0916",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected",
+    "reference_python sample 1: output != expected",
+    "brute_force_python sample 1: output != expected",
+    "reference_python sample 2: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0947",
+   "missing": [],
+   "issues": [
+    "reference_python sample 0: output != expected",
+    "brute_force_python sample 0: output != expected",
+    "brute_force_python sample 1: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  },
+  {
+   "id": "np-0950",
+   "missing": [],
+   "issues": [
+    "brute_force_python sample 0: output != expected",
+    "brute_force_python sample 2: output != expected"
+   ]
+  }
+ ],
+ "duplicate_titles": [
+  "activity selection count",
+  "anagram check",
+  "articulation points count",
+  "bipartite graph check",
+  "burst balloons maximum coins",
+  "compare version numbers",
+  "connected components in an undirected graph",
+  "count arithmetic slices",
+  "count bridges in an undirected graph",
+  "count connected components",
+  "count distinct subsequences equal to target",
+  "count distinct substrings",
+  "count distinct values in every window",
+  "count divisors",
+  "count inversions",
+  "count islands in a grid",
+  "count pairs with difference k",
+  "count palindromic subsequences",
+  "count palindromic substrings",
+  "count paths in a dag",
+  "count set bits",
+  "count subarrays with sum divisible by k",
+  "count subarrays with sum k",
+  "count vowels",
+  "daily temperature wait",
+  "daily temperatures",
+  "edit distance",
+  "euler totient function",
+  "evaluate postfix expression",
+  "evaluate reverse polish notation",
+  "eventual safe vertices",
+  "first non-repeating character",
+  "first occurrence in sorted array",
+  "first repeated value",
+  "flood fill",
+  "group words by anagram signature",
+  "integer square root",
+  "josephus survivor",
+  "kth smallest pair distance",
+  "largest rectangle in histogram",
+  "longest alternating parity subarray",
+  "longest bitonic subsequence",
+  "longest common prefix",
+  "longest common subsequence length",
+  "longest common substring length",
+  "longest consecutive values",
+  "longest equal run",
+  "longest increasing subsequence",
+  "longest ones after k flips",
+  "longest palindromic subsequence",
+  "longest palindromic substring length",
+  "longest repeating character replacement",
+  "longest subarray with sum k",
+  "longest substring without repeats",
+  "longest unique substring",
+  "maximum circular subarray sum",
+  "maximum product subarray",
+  "maximum subarray sum",
+  "maximum sum increasing subsequence",
+  "maximum sum of fixed-length window",
+  "maximum xor of two values",
+  "merge overlapping intervals",
+  "merge two sorted arrays",
+  "minimum coin count",
+  "minimum cost to connect ropes",
+  "minimum cost to cut a stick",
+  "minimum days to make bouquets",
+  "minimum eating speed",
+  "minimum insertions for a palindrome",
+  "minimum number of perfect squares",
+  "minimum platforms for trains",
+  "minimum spanning tree weight",
+  "minimum sum of fixed-length window",
+  "minimum swaps to group values at most k",
+  "minimum window containing pattern",
+  "minimum window subsequence",
+  "move zeros to end",
+  "network delay time",
+  "number of enclaves",
+  "peak element index",
+  "power of two",
+  "prime factorization",
+  "product except self",
+  "product of array except self",
+  "range sum queries",
+  "reverse word order",
+  "single number among triples",
+  "sliding window maximum",
+  "smallest missing nonnegative",
+  "subtree size queries",
+  "trapping rain water",
+  "validate bracket sequence",
+  "weighted interval scheduling",
+  "word break feasibility"
+ ],
+ "sample_keys": {
+  "stdin/stdout": 250,
+  "input/output": 700
+ }
+}
